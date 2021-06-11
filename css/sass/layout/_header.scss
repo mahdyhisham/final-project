@@ -1,0 +1,22 @@
+header {
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    nav {
+      display: flex;
+      ul {
+        display: flex;
+        li {
+          display: block;
+          margin: 15px;
+        }
+      }
+      i {
+        display: block;
+        margin: 15px;
+        font-size: 24px;
+      }
+    }
+  }
+}

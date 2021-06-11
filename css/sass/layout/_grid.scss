@@ -1,0 +1,27 @@
+.container {
+  padding: 0 15px;
+  margin: auto;
+  position: relative;
+  @media (min-width: 576px) {
+    width: 550px;
+  }
+  // Extra small devices (portrait phones, less than 576px)
+  @media (min-width: 768px) {
+    width: 750px;
+  }
+
+  // Small devices (landscape phones, less than 768px)
+  @media (min-width: 992px) {
+    width: 970px;
+  }
+
+  // Medium devices (tablets, less than 992px)
+  @media (min-width: 1200px) {
+    width: 1170px;
+  }
+
+  // Large devices (desktops, less than 1200px)
+  @media (min-width: 1199.98px) {
+    width: 1170px;
+  }
+}
