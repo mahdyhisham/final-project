@@ -6,8 +6,61 @@
 html {
   scroll-behavior: smooth;
 }
+
+//start  scroll
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 15px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+  transition: all 1s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #333;
+}
+//end scroll
+
 body {
   font-family: "Open Sans", sans-serif;
+  margin: auto;
+  position: relative;
+}
+#scrollto {
+  background-color: black;
+  color: wheat;
+  width: 50px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 50%;
+  text-align: center;
+  padding-bottom: 4px;
+  font-size: 20px;
+  cursor: pointer;
+  position: fixed;
+  right: 3%;
+  bottom: 4%;
+  z-index: 1000;
+  display: none;
+  @media (max-width: $med) {
+    width: 35px;
+    height: 35px;
+    right: 7%;
+  }
+  @media (max-width: $ext-small) {
+    width: 35px;
+    height: 35px;
+    right: 10%;
+  }
 }
 ul {
   list-style-type: none;

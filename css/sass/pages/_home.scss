@@ -1,0 +1,441 @@
+// loading
+.loading-animation {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 1001;
+  transition: 2s;
+  img {
+    width: 20%;
+  }
+}
+// loading
+.landing-page {
+  height: 60vh;
+  background-image: url("../images/land-1.jpg");
+  background-size: cover; //ther is a problem in size in small media
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  transition-delay: 0.3s;
+  .over-lay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+  .intro-text {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px;
+    z-index: 2;
+    @media (max-width: 767px) {
+      width: 75%;
+    }
+    h1 {
+      font-size: 40px;
+      line-height: 10px;
+      color: $base-color;
+      font-weight: 800;
+      @media (max-width: 767px) {
+        font-size: 30px;
+      }
+      @media (max-width: 550px) {
+        font-size: 22px;
+      }
+    }
+    p {
+      font-size: 25px;
+      color: $base-color;
+      word-spacing: 2px;
+      font-weight: 400;
+      @media (max-width: 767px) {
+        font-size: 16px;
+      }
+      @media (max-width: 550px) {
+        font-size: 12px;
+      }
+    }
+  }
+  .pagenation {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    z-index: 2;
+    .btn {
+      width: 15px;
+      height: 15px;
+      border: 2px solid white;
+      border-radius: 50%;
+      cursor: pointer;
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+    .active {
+      background-color: $base-color;
+    }
+  }
+}
+
+// Start Dean message
+.about-choice {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  .dean-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+    .dean-info {
+      position: relative;
+      .dean-image {
+        box-shadow: 0 0 10px;
+        border-radius: 10px 0;
+        transition: 2s;
+      }
+      .dean-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 25%;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        background-color: rgba(0, 0, 0, 0.3);
+        transform: scaleY(0);
+        transition: 0.3s;
+
+        span {
+          color: $base-color;
+        }
+      }
+      &:hover .dean-name {
+        transform: scaleY(1);
+      }
+      &:hover .dean-image {
+        transform: scale(1.05);
+      }
+    }
+    .words-more {
+      margin-left: 75px;
+      @media (max-width: 767px) {
+        text-align: center;
+        margin: auto;
+      }
+      h1 {
+        font-size: 40px;
+        @media (max-width: 550px) {
+          font-size: 30px;
+        }
+      }
+      p {
+        font-size: 20px;
+        line-height: 1.5em;
+        font-weight: 400;
+        color: #666;
+        @media (max-width: 550px) {
+          font-size: 15px;
+        }
+      }
+      p:first-of-type {
+        margin-bottom: 25px;
+        font-size: 20px;
+        @media (max-width: 550px) {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+// End Dean message
+
+// Start Choice Section
+
+.choice {
+  h1 {
+    padding: 30px 0;
+  }
+  .choice-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    h1 {
+      @media (max-width: $larg) {
+        font-size: 30px;
+      }
+      @media (max-width: $med) {
+        font-size: 25px;
+      }
+      @media (max-width: $s-med) {
+        font-size: 20px;
+      }
+    }
+    .slides {
+      .first-slide {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        justify-content: center;
+        align-content: center;
+        gap: 10px;
+        .col-1,
+        .col-3 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+
+          overflow: hidden;
+          .first-figure,
+          .second-figure {
+            position: relative;
+            overflow: hidden;
+            figure {
+              position: relative;
+              overflow: hidden;
+              img {
+                width: 100%;
+                transition: 2s;
+                margin-bottom: 10px;
+              }
+              .heading {
+                width: 100%;
+                padding: 15px;
+                background-color: rgba(0, 0, 0, 0.3);
+                color: white;
+                font-weight: 800;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                transform: translateY(-25%);
+                transition: all $trans;
+                z-index: 2;
+                @media (max-width: $ext-larg) {
+                  padding: 10px;
+                  font-size: 16px;
+                }
+                @media (max-width: $larg) {
+                  padding: 5px;
+                }
+                @media (max-width: $med) {
+                  display: none;
+                }
+              }
+              figcaption {
+                width: 100%;
+                padding: 5px;
+                background-color: rgba(0, 0, 0, 0.3);
+                color: white;
+                font-weight: 400;
+                position: absolute;
+                left: 0;
+                bottom: 10%;
+                opacity: 0;
+                transform: translateY(50%);
+                transition: all $trans;
+                z-index: 2;
+                @media (max-width: $ext-larg) {
+                  padding: 0;
+                  font-size: 12px;
+                }
+                @media (max-width: $larg) {
+                  padding: 0;
+                  font-size: 12px;
+                }
+                @media (max-width: $larg) {
+                  padding: 0;
+                  font-size: 12px;
+                }
+                @media (max-width: $med) {
+                  display: none;
+                }
+              }
+            }
+            &:hover img {
+              transform: scale(1.05);
+            }
+            &:hover .heading {
+              opacity: 1;
+              transform: translateY(0);
+            }
+            &:hover figcaption {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+        }
+        .col-2 {
+          @extend .col-1;
+          .only-figure {
+            @extend .first-figure;
+          }
+        }
+        @media (max-width: $ext-larg) {
+          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        }
+        @media (max-width: $larg) {
+          grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        }
+        @media (max-width: $med) {
+          grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        }
+        @media (max-width: $s-med) {
+          grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        }
+        @media (max-width: $small) {
+          grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+        }
+        @media (max-width: $ext-small) {
+          grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+        }
+      }
+    }
+  }
+}
+// End Choice Section
+
+// Strat section last news
+
+.latest-news {
+  margin: 80px 0;
+  background-color: black;
+  height: 65vh;
+  color: white;
+}
+
+// End section last news
+
+// Start Events
+
+.events {
+  overflow: hidden;
+  .event-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+      font-size: 40px;
+      margin-bottom: 50px;
+    }
+    .events-cards {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0 15px;
+      perspective: 1000px;
+      .card {
+        width: (90% / 3);
+        height: 370px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 2px 5px 10px #999;
+        opacity: 0.7;
+        transition: 1s;
+        figure {
+          img {
+            width: 100%;
+          }
+        }
+
+        .card-info {
+          background-color: white;
+          padding: 15px 10px;
+          transition: 1s;
+          text-align: center;
+          z-index: 5;
+          h3 {
+            margin: 10px 0;
+            @media (max-width: $med) {
+              font-size: 16px;
+            }
+          }
+          p {
+            line-height: 1.8em;
+            padding-bottom: 10px;
+            @media (max-width: $larg) {
+              font-size: 12px;
+              line-height: 1.3em;
+            }
+            @media (max-width: $med) {
+              font-size: 12px;
+              line-height: 1.3em;
+            }
+            @media (max-width: $ext-small) {
+              font-size: 14px;
+              line-height: 1em;
+            }
+          }
+        }
+        &:nth-child(2) {
+          transform: translateZ(100px);
+          opacity: 1;
+        }
+        &:hover {
+          transform: translateZ(35px);
+          opacity: 1;
+        }
+        &:hover .card-info {
+          transform: translateY(-50%);
+          @media (max-width: $larg) {
+            transform: translateY(0);
+          }
+        }
+        @media (max-width: $med) {
+          width: 100%;
+          height: 350px;
+          margin-bottom: 30px;
+        }
+      }
+      @media (max-width: $med) {
+        flex-direction: column;
+        width: 100%;
+      }
+    }
+    .more-info {
+      margin-top: 50px;
+      padding: 1em 2em;
+      background-color: black;
+      border: 1px solid #333;
+      font-size: 1.1em;
+      position: relative;
+      cursor: pointer;
+      transition: all 0.3s;
+      @media (max-width: $med) {
+        margin-top: 20px;
+      }
+      a {
+        color: white;
+      }
+      &:hover {
+        background-color: white;
+      }
+      &:hover a {
+        color: #333;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+// End Events

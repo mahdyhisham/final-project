@@ -1,0 +1,20 @@
+$ext-larg: 991px;
+$larg: 768px;
+$med: 575px;
+$s-med: 415px;
+$small: 375px;
+$ext-small: 320px;
+
+$main-color: #161616;
+$base-color: #fff;
+$trans: 0.3s;
+
+// window.onscroll = () => {
+//     var windowScroll = window.pageYOffset,
+//       outerHieght = messSec.offsetTop,
+//       innerHeight = messSec.offsetHeight,
+//       pageHieght = window.innerHeight;
+//     if (windowScroll > outerHieght + innerHeight - pageHieght) {
+//       // typing();
+//     }
+//   };
