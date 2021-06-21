@@ -4,8 +4,8 @@ function preloading() {
   window.onload = () => {
     setTimeout(() => {
       loadAnim.style.display = "none";
-      // window.scrollTo(0, 0);
-    }, 1);
+      window.scrollTo(0, 0);
+    }, 3500);
   };
 }
 preloading();
@@ -115,7 +115,7 @@ function typing() {
         if (j > p2.length) {
           clearInterval(secP);
         }
-      }, 20);
+      }, 40);
     }
   }, 60);
 }
