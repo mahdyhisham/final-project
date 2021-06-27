@@ -14,6 +14,9 @@ preloading();
 
 //
 
+//????
+// containue onscroll functioon
+
 // scroll to top Button
 let scrtop = document.getElementById("scrollto");
 function btn() {
@@ -22,6 +25,16 @@ function btn() {
       scrtop.style.display = "block";
     } else {
       scrtop.style.display = "none";
+    }
+    var windowScroll = window.pageYOffset,
+      outerHieght = document.querySelector(".events").offsetTop,
+      innerHeight = document.querySelector(".events").offsetHeight,
+      conten = document.querySelector(".events-cards"),
+      pageHieght = window.innerHeight;
+    if (windowScroll > outerHieght + innerHeight - pageHieght - 250) {
+      conten.classList.add("active");
+    } else {
+      conten.classList.remove("active");
     }
   };
   scrtop.onclick = () => {
@@ -33,18 +46,18 @@ btn();
 
 //
 
-// can not hidde menu without toggel buttom
+// can not hidde menu without toggel button
 var menuTogg = document.querySelector(".bars"),
   navg = document.querySelector(".nav"),
   list = document.querySelector(".list");
 
 function toggleMenu() {
-  menuTogg.addEventListener("click", () => {
+  menuTogg.addEventListener("click", (e) => {
     navg.classList.toggle("menu");
     list.classList.toggle("show");
   });
-  let pageWidth = window.innerWidth;
   window.onresize = () => {
+    let pageWidth = window.innerWidth;
     if (pageWidth > 767) {
       navg.classList.remove("menu");
       list.classList.remove("show");
@@ -122,6 +135,18 @@ function typing() {
 typing();
 // Dean's message
 
-//
+// footer list-show-hide
 
-// sdsadi
+//want to remove active when click any wher eles
+let plus = document.querySelectorAll(".H-S");
+let linkList = document.querySelectorAll(".listlinks");
+
+plus.forEach((plu, i) => {
+  plu.addEventListener("click", () => {
+    linkList[i].classList.toggle("active");
+  });
+});
+
+//footer list-show-hide
+
+//

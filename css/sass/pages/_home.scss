@@ -11,6 +11,7 @@
   background-color: white;
   z-index: 1001;
   transition: 2s;
+  overflow: hidden;
   img {
     width: 20%;
   }
@@ -19,6 +20,7 @@
 .landing-page {
   height: 60vh;
   background-image: url("../images/land-1.jpg");
+  background-position: center center;
   background-size: cover; //ther is a problem in size in small media
   position: relative;
   display: flex;
@@ -33,7 +35,11 @@
     height: 100%;
     left: 0;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.6) 25%,
+      transparent
+    );
     z-index: 1;
   }
   .intro-text {
@@ -328,11 +334,14 @@
 
 .events {
   overflow: hidden;
+  transition: all 2s;
+
   .event-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+
     h1 {
       font-size: 40px;
       margin-bottom: 50px;
@@ -343,6 +352,9 @@
       align-items: center;
       padding: 0 15px;
       perspective: 1000px;
+      transition: all 1.5s;
+      transform: translateY(70%);
+      opacity: 0;
       .card {
         width: (90% / 3);
         height: 370px;
@@ -411,28 +423,9 @@
         flex-direction: column;
         width: 100%;
       }
-    }
-    .more-info {
-      margin-top: 50px;
-      padding: 1em 2em;
-      background-color: black;
-      border: 1px solid #333;
-      font-size: 1.1em;
-      position: relative;
-      cursor: pointer;
-      transition: all 0.3s;
-      @media (max-width: $med) {
-        margin-top: 20px;
-      }
-      a {
-        color: white;
-      }
-      &:hover {
-        background-color: white;
-      }
-      &:hover a {
-        color: #333;
-        font-weight: bold;
+      &.active {
+        transform: translateY(0);
+        opacity: 1;
       }
     }
   }

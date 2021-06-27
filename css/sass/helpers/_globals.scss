@@ -6,15 +6,17 @@
 html {
   scroll-behavior: smooth;
 }
-
+::selection {
+  color: darkturquoise;
+}
 //start  scroll
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 /* Handle */

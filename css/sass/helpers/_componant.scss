@@ -1,0 +1,24 @@
+.button {
+  margin-top: 70px;
+  margin-bottom: 20px;
+  padding: 1em 2em;
+  background-color: black;
+  border: 1px solid #333;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: all 0.3s;
+  @media (max-width: $med) {
+    margin-top: 20px;
+  }
+  a {
+    color: white;
+    font-weight: bold;
+  }
+  &:hover {
+    background-color: white;
+    border: 1px solid #333;
+  }
+  &:hover a {
+    color: #333;
+  }
+}
