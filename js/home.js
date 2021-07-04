@@ -4,8 +4,11 @@ function preloading() {
   window.onload = () => {
     setTimeout(() => {
       loadAnim.style.display = "none";
-      window.scrollTo(0, 0);
-    }, 3500);
+      // window.scrollTo({
+      //   top: 0,
+      //   behavior: "smooth",
+      // });
+    }, 1);
   };
 }
 preloading();
@@ -26,19 +29,22 @@ function btn() {
     } else {
       scrtop.style.display = "none";
     }
-    var windowScroll = window.pageYOffset,
+    var windowScroll = window.scrollY,
       outerHieght = document.querySelector(".events").offsetTop,
       innerHeight = document.querySelector(".events").offsetHeight,
-      conten = document.querySelector(".events-cards"),
+      conten = document.querySelector(".events"),
       pageHieght = window.innerHeight;
-    if (windowScroll > outerHieght + innerHeight - pageHieght - 250) {
+    if (windowScroll > outerHieght - pageHieght + 100) {
       conten.classList.add("active");
     } else {
       conten.classList.remove("active");
     }
   };
   scrtop.onclick = () => {
-    window.scrollTo(0, 0);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 }
 btn();

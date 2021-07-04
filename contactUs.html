@@ -17,21 +17,31 @@
   </head>
   <body>
     <div class="form">
-      <div class="clip-path">
-        <h1>Contact us <i class="far fa-envelope"></i></h1>
-      </div>
+      <div class="clip-path"></div>
       <form action="">
-        <fieldset>
-          <div class="name">
-            <input type="text" placeholder="First name" />
-            <input type="text" placeholder="Second name" />
-          </div>
-          <input type="email" placeholder="Universty email" /><br />
-          <input type="phone" placeholder="Phone number" /><br />
-          <input type="massega" class="textarea" placeholder="message..." />
-          <br />
-          <button>Send</button>
-        </fieldset>
+        <h1>Contact us <i class="far fa-envelope"></i></h1>
+        <div class="input_field">
+          <input type="text" placeholder="" />
+          <label for="">Full Name<span class="required_field">*</span></label>
+        </div>
+        <div class="input_field">
+          <input type="text" placeholder="" />
+          <label for="">Subject</label>
+        </div>
+        <div class="input_field">
+          <input type="email" placeholder="" />
+          <label for="">Email<span class="required_field">*</span></label>
+        </div>
+        <div class="input_field">
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="5"
+            placeholder="Message"
+          ></textarea>
+        </div>
+        <input type="submit" class="submit" value="Send" />
       </form>
     </div>
     <script src="js/contactUs.js"></script>

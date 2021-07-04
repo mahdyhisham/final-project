@@ -18,20 +18,18 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 12px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: black;
-  border-radius: 10px;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  border-radius: 20px;
 }
 
 /* Handle on hover */
@@ -59,7 +57,7 @@ body {
   position: fixed;
   right: 3%;
   bottom: 4%;
-  z-index: 1000;
+  z-index: 1001;
   display: none;
 }
 
@@ -135,6 +133,7 @@ a {
   padding: 1em 2em;
   background-color: black;
   border: 1px solid #333;
+  border-radius: 10px 0;
   font-size: 1.1em;
   cursor: pointer;
   -webkit-transition: all 0.3s;
@@ -171,6 +170,7 @@ header .container {
 }
 
 header .container .bars {
+  position: relative;
   display: none;
 }
 
@@ -234,7 +234,7 @@ header .container nav ul li:not(:last-child) a::before {
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: #caf7e3;
+  background-color: #21a6c7;
   -webkit-transform: scale(0.2);
           transform: scale(0.2);
   opacity: 0;
@@ -266,7 +266,10 @@ header .container .menu {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: absolute;
+  bottom: 0;
   width: 100%;
+  z-index: 5;
 }
 
 header .container .show {
@@ -278,10 +281,9 @@ header .container .show {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.323233);
+  background-color: white;
   position: absolute;
   top: 100%;
-  right: -30px;
   z-index: 3;
 }
 
@@ -290,20 +292,20 @@ header .container .show::before {
   position: absolute;
   border: solid;
   border-width: 12px;
-  border-color: transparent transparent rgba(0, 0, 0, 0.323233) transparent;
+  border-color: transparent transparent #21a6c7 transparent;
   top: -12%;
-  right: 1%;
+  right: 6.5%;
 }
 
 header .container .show li {
-  margin: 8px;
+  margin: 10px;
 }
 
 header .container .show li a {
   padding: 5px;
   font-size: 20px;
   font-weight: 600;
-  color: #fff;
+  color: black;
 }
 
 header .container .show li:last-child {
@@ -452,8 +454,8 @@ header .container .show li:last-child {
 }
 
 .about-choice {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 15px;
 }
 
 .about-choice .dean-message {
@@ -571,7 +573,7 @@ header .container .show li:last-child {
 }
 
 .choice h1 {
-  padding: 30px 0;
+  padding-bottom: 20px;
 }
 
 .choice .choice-content {
@@ -600,7 +602,7 @@ header .container .show li:last-child {
   }
 }
 
-@media (max-width: 415px) {
+@media (max-width: 425px) {
   .choice .choice-content h1 {
     font-size: 20px;
   }
@@ -862,7 +864,7 @@ header .container .show li:last-child {
   }
 }
 
-@media (max-width: 415px) {
+@media (max-width: 425px) {
   .choice .choice-content .slides .first-slide {
     -ms-grid-columns: (minmax(100px, 1fr))[auto-fill];
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
@@ -883,17 +885,56 @@ header .container .show li:last-child {
   }
 }
 
+.choice .choice-content .slides button {
+  margin-top: 20px;
+}
+
 .latest-news {
-  margin: 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 35px;
   background-color: black;
   height: 65vh;
   color: white;
 }
 
+.latest-news .clip_contains {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 99%;
+  height: 99%;
+}
+
+.latest-news .clip_contains .left_clip {
+  width: 100%;
+  background-color: black;
+}
+
+.latest-news .clip_contains .right_clip {
+  width: 100%;
+  background-color: black;
+}
+
 .events {
   overflow: hidden;
+  margin-bottom: 50px;
   -webkit-transition: all 2s;
   transition: all 2s;
+  -webkit-transform: translateY(80%);
+          transform: translateY(80%);
+  opacity: 0;
 }
 
 .events .event-content {
@@ -931,9 +972,6 @@ header .container .show li:last-child {
           perspective: 1000px;
   -webkit-transition: all 1.5s;
   transition: all 1.5s;
-  -webkit-transform: translateY(70%);
-          transform: translateY(70%);
-  opacity: 0;
 }
 
 .events .event-content .events-cards .card {
@@ -955,10 +993,11 @@ header .container .show li:last-child {
 
 .events .event-content .events-cards .card .card-info {
   background-color: white;
-  padding: 15px 10px;
+  padding: 10px 10px 20px;
   -webkit-transition: 1s;
   transition: 1s;
   text-align: center;
+  position: absolute;
   z-index: 5;
 }
 
@@ -994,7 +1033,19 @@ header .container .show li:last-child {
 @media (max-width: 320px) {
   .events .event-content .events-cards .card .card-info p {
     font-size: 14px;
-    line-height: 1em;
+    line-height: 1.5em;
+  }
+}
+
+@media (max-width: 575px) {
+  .events .event-content .events-cards .card .card-info {
+    top: 35%;
+  }
+}
+
+@media (max-width: 320px) {
+  .events .event-content .events-cards .card .card-info {
+    top: 37%;
   }
 }
 
@@ -1024,9 +1075,10 @@ header .container .show li:last-child {
 
 @media (max-width: 575px) {
   .events .event-content .events-cards .card {
-    width: 100%;
-    height: 350px;
-    margin-bottom: 30px;
+    width: 80%;
+    height: 250px;
+    margin-bottom: 40px;
+    opacity: 1;
   }
 }
 
@@ -1036,11 +1088,10 @@ header .container .show li:last-child {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
   }
 }
 
-.events .event-content .events-cards.active {
+.events.active {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
@@ -1157,7 +1208,7 @@ footer .container .footer-content .links .fax-no-phone .listlinks h5 {
   margin-bottom: 5px;
 }
 
-footer .container .footer-content .links .fax-no-phone .listlinks h5:last-child a {
+footer .container .footer-content .links .fax-no-phone .listlinks h5:last-of-type a {
   color: #c4372b;
   margin-right: 3px;
 }

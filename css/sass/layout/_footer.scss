@@ -67,7 +67,7 @@ footer {
           .listlinks {
             h5 {
               margin-bottom: 5px;
-              &:last-child() {
+              &:last-of-type {
                 a {
                   color: #c4372b;
                   margin-right: 3px;

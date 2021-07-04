@@ -1,14 +1,16 @@
 // n focus field
 
 let inputs = document.querySelectorAll("input");
+let labels = document.querySelectorAll("label");
 
-inputs.forEach((input) => {
-  let atr = input.getAttribute("placeholder");
+inputs.forEach((input, i) => {
   input.addEventListener("focus", () => {
-    input.setAttribute("placeholder", "");
+    labels[i].classList.add("focusedlabel");
   });
   input.addEventListener("blur", () => {
-    input.setAttribute("placeholder", atr);
+    labels[i].classList.remove("focusedlabel");
+    if (input.value != "") {
+      labels[i].classList.add("focusedlabel");
+    }
   });
-  console.log(atr);
 });
