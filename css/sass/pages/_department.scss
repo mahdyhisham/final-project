@@ -2,41 +2,120 @@
   overflow: hidden;
   .container {
     width: 100%;
-    // background-color: black;
+    // Start guide
+    .guide_bottons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 0;
+      a {
+        font-weight: 800;
+        padding: 1em 2em;
+        background-color: #4285f4;
+        color: white;
+        border: 2px solid white;
+        outline: none;
+        border-radius: 50px;
+        transition: 0.5s;
+        @media (max-width: $larg) {
+          display: none;
+        }
+        &:not(:last-of-type) {
+          margin-right: 10px;
+        }
+        &:hover {
+          transform: translateY(-10px);
+          background-color: white;
+          color: #4285f4;
+          border: 2px solid #4285f4;
+        }
+        &:nth-of-type(2) {
+          background-color: #db4437;
+          &:hover {
+            background-color: white;
+            color: #db4437;
+            border: 2px solid #db4437;
+          }
+        }
+        &:nth-of-type(3) {
+          background-color: #f4b400;
+          &:hover {
+            background-color: white;
+            color: #f4b400;
+            border: 2px solid #f4b400;
+          }
+        }
+        &:nth-of-type(4) {
+          background-color: #03dac6;
+          &:hover {
+            background-color: white;
+            color: #03dac6;
+            border: 2px solid #03dac6;
+          }
+        }
+        &:nth-of-type(5) {
+          background-color: #8ac6ee;
+          &:hover {
+            background-color: white;
+            color: #8ac6ee;
+            border: 2px solid #8ac6ee;
+          }
+        }
+        &:last-of-type {
+          background-color: #0f9d58;
+          &:hover {
+            background-color: white;
+            color: #0f9d58;
+            border: 2px solid #0f9d58;
+          }
+        }
+      }
+    }
+    // End guide
     .left {
       display: grid;
       grid-template-columns: 0.6fr 1fr;
       justify-content: center;
-      padding: 80px 0;
+      align-items: center;
+      padding: 50px 0;
       transition: all 2s;
       transform: translateX(100%);
       figure {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: white;
+        background-color: black;
         clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-
-        padding: 15px;
+        padding: 25px;
         position: relative;
         img {
           flex-basis: 100%;
+          width: 5%;
           clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
         }
+        @media (max-width: $s-med) {
+          padding: 20px;
+        }
+      }
+      @media (max-width: $larg) {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0;
       }
     }
     .right {
       display: grid;
       grid-template-columns: 1fr 0.6fr;
       justify-content: space-around;
-      padding: 80px 0;
+      align-items: center;
+      padding: 50px 0;
       transition: all 2s;
       transform: translateX(-100%);
       figure {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: white;
+        background-color: black;
         clip-path: polygon(
           100% 0%,
           75% 50%,
@@ -45,10 +124,11 @@
           0% 50%,
           25% 0%
         );
-        padding: 15px;
+        padding: 50px;
         position: relative;
         img {
           flex-basis: 100%;
+          width: 100%;
           clip-path: polygon(
             100% 0%,
             75% 50%,
@@ -58,6 +138,14 @@
             25% 0%
           );
         }
+        @media (max-width: $larg) {
+          padding: 25px;
+        }
+      }
+      @media (max-width: $larg) {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 40px 0;
       }
     }
     figcaption {
@@ -68,15 +156,23 @@
       color: #555;
       h1 {
         color: #83c6ee;
-        padding: 10px 0;
+        padding-top: 15px;
         margin-bottom: 20px;
+        @media (max-width: $s-med) {
+          font-size: 26px;
+        }
       }
       p {
         text-align: center;
         line-height: 1.8em;
         padding: 0 20px;
+        @media (max-width: $s-med) {
+          line-height: 1.5em;
+          font-size: 16px;
+          padding: 0 12px;
+        }
       }
-      button {
+      a {
         padding: 0.7em 1.7em;
         border-radius: 10px 0;
         border: 2px solid white;

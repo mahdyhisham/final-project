@@ -1,5 +1,6 @@
 // scroll to top Button
 let scrtop = document.getElementById("scrollto");
+let departments = document.querySelectorAll(".first_dep");
 function btn() {
   window.onscroll = () => {
     if (window.pageYOffset >= 100) {
@@ -7,6 +8,16 @@ function btn() {
     } else {
       scrtop.style.display = "none";
     }
+
+    // department section
+    departments.forEach((dep) => {
+      if (window.scrollY > dep.offsetTop - window.innerHeight + 300) {
+        dep.classList.add("show");
+      } else {
+        dep.classList.remove("show");
+      }
+    });
+    // department section
   };
   scrtop.onclick = () => {
     window.scrollTo({
@@ -40,21 +51,6 @@ function toggleMenu() {
 }
 toggleMenu();
 // End header toggle
-
-// department section
-let departments = document.querySelectorAll(".first_dep");
-
-window.onscroll = () => {
-  departments.forEach((dep) => {
-    if (window.scrollY > dep.offsetTop - window.innerHeight + 300) {
-      dep.classList.add("show");
-    } else {
-      dep.classList.remove("show");
-    }
-  });
-};
-
-// department section
 
 // footer list-show-hide
 
