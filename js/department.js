@@ -1,6 +1,6 @@
 // scroll to top Button
 let scrtop = document.getElementById("scrollto");
-let departments = document.querySelectorAll(".first_dep");
+let departments = document.querySelectorAll(".dep_name");
 function btn() {
   window.onscroll = () => {
     if (window.pageYOffset >= 100) {

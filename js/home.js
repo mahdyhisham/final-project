@@ -77,7 +77,7 @@ toggleMenu();
 
 //Start landing slider
 let landing = document.getElementById("land"),
-  slides = ["land-1.jpg", "land-2.jpg", "land-3.jpg", "land-4.jpg"],
+  slides = ["land-1.jpg", "land-2.jpg", "space.jpg", "coop.jpg"],
   bullets = document.querySelectorAll(".btn");
 
 function change_image(land, slideNo, bulletNo) {
