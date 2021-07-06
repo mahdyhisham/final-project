@@ -11,7 +11,7 @@
       a {
         font-weight: 800;
         padding: 1em 2em;
-        background-color: #4285f4;
+        background-color: $vilot;
         color: white;
         border: 2px solid white;
         outline: none;
@@ -26,47 +26,47 @@
         &:hover {
           transform: translateY(-10px);
           background-color: white;
-          color: #4285f4;
-          border: 2px solid #4285f4;
+          color: $vilot;
+          border: 2px solid $vilot;
         }
         &:nth-of-type(2) {
-          background-color: #db4437;
+          background-color: $red;
           &:hover {
             background-color: white;
-            color: #db4437;
-            border: 2px solid #db4437;
+            color: $red;
+            border: 2px solid $red;
           }
         }
         &:nth-of-type(3) {
-          background-color: #f4b400;
+          background-color: $yellow;
           &:hover {
             background-color: white;
-            color: #f4b400;
-            border: 2px solid #f4b400;
+            color: $yellow;
+            border: 2px solid $yellow;
           }
         }
         &:nth-of-type(4) {
-          background-color: #03dac6;
+          background-color: $light_blue;
           &:hover {
             background-color: white;
-            color: #03dac6;
-            border: 2px solid #03dac6;
+            color: $light_blue;
+            border: 2px solid $light_blue;
           }
         }
         &:nth-of-type(5) {
-          background-color: #8ac6ee;
+          background-color: $bluerish;
           &:hover {
             background-color: white;
-            color: #8ac6ee;
-            border: 2px solid #8ac6ee;
+            color: $bluerish;
+            border: 2px solid $bluerish;
           }
         }
         &:last-of-type {
-          background-color: #0f9d58;
+          background-color: $green;
           &:hover {
             background-color: white;
-            color: #0f9d58;
-            border: 2px solid #0f9d58;
+            color: $green;
+            border: 2px solid $green;
           }
         }
       }
@@ -170,21 +170,6 @@
           line-height: 1.5em;
           font-size: 16px;
           padding: 0 12px;
-        }
-      }
-      a {
-        padding: 0.7em 1.7em;
-        border-radius: 10px 0;
-        border: 2px solid white;
-        background-color: #83c6ee;
-        color: white;
-        margin-top: 20px;
-        color: white;
-        font-weight: 800;
-        &:hover {
-          color: #83c6ee;
-          background-color: white;
-          border: 2px solid #83c6ee;
         }
       }
     }

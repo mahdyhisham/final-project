@@ -147,17 +147,34 @@ a {
 }
 
 .button a {
-  color: white;
+  color: #fff;
   font-weight: bold;
 }
 
 .button:hover {
-  background-color: white;
+  background-color: #fff;
   border: 1px solid #333;
 }
 
 .button:hover a {
   color: #333;
+}
+
+.read_more {
+  padding: 0.7em 1.7em;
+  border-radius: 10px 0;
+  border: 2px solid #fff;
+  background-color: #83c6ee;
+  color: #fff;
+  margin-top: 20px;
+  color: #fff;
+  font-weight: 800;
+}
+
+.read_more:hover {
+  color: #83c6ee;
+  background-color: #fff;
+  border: 2px solid #83c6ee;
 }
 
 header .container {
@@ -316,6 +333,16 @@ header .container .show li:last-child {
   overflow: hidden;
 }
 
+.department_info .read_more {
+  background-color: #f4b400;
+}
+
+.department_info .read_more:hover {
+  color: #f4b400;
+  background-color: #fff;
+  border-color: #f4b400;
+}
+
 .department_info .overview {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -342,17 +369,20 @@ header .container .show li:last-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.9);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.9);
 }
 
 .department_info .overview figure img {
+  border-radius: 2rem;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   height: 350px;
 }
 
-.department_info .overview figcaption h4 {
-  margin: 15px 0;
-  line-height: 1.5em;
+.department_info .overview figcaption h1 {
+  color: #f4b400;
 }
 
 .department_info .overview figcaption p {
@@ -362,25 +392,179 @@ header .container .show li:last-child {
   color: #666;
 }
 
-.department_info .academic_programs {
+.department_info .overview figcaption h4 {
+  margin: 15px 0;
+  line-height: 1.5em;
+}
+
+.department_info .overview figcaption .name {
+  color: #f4b400;
+}
+
+.department_info .mission_facilities {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+}
+
+.department_info .mission_facilities .mission_content {
+  background-color: #f4b400;
+  color: #fff;
+  padding: 25px;
+}
+
+.department_info .mission_facilities .mission_content h2 {
+  padding: 10px 0 10px;
+}
+
+.department_info .mission_facilities .mission_content .info {
+  line-height: 1.5em;
+  font-weight: 600;
+  color: #333;
+  display: none;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.department_info .mission_facilities .mission_content ul li::before {
+  content: "\2022";
+  color: #db4437;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+
+.department_info .mission_facilities .mission_content .show {
+  display: block;
+}
+
+.department_info .mission_facilities .facilities_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 25px;
+}
+
+.department_info .mission_facilities .facilities_content h1 {
+  color: #f4b400;
+}
+
+.department_info .mission_facilities .facilities_content h5,
+.department_info .mission_facilities .facilities_content ul {
+  margin: 10px 0;
+}
+
+.department_info .mission_facilities .facilities_content li {
+  line-height: 1.5em;
+}
+
+.department_info .mission_facilities .facilities_content ul li::before {
+  content: "\2022";
+  color: #f4b400;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+
+@media (max-width: 425px) {
+  .department_info .mission_facilities {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.department_info .academic_programs {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.department_info .academic_programs h1 {
+  color: #f4b400;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.department_info .academic_programs .academic_phases {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-column-gap: 20px;
           column-gap: 20px;
+  padding-bottom: 50px;
+}
+
+.department_info .academic_programs .academic_phases .undergraduate,
+.department_info .academic_programs .academic_phases figure,
+.department_info .academic_programs .academic_phases .graduate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.department_info .academic_programs .academic_phases .undergraduate img,
+.department_info .academic_programs .academic_phases figure img,
+.department_info .academic_programs .academic_phases .graduate img {
+  width: 100%;
+}
+
+.department_info .academic_programs .academic_phases .undergraduate figcaption,
+.department_info .academic_programs .academic_phases figure figcaption,
+.department_info .academic_programs .academic_phases .graduate figcaption {
+  width: 100%;
+  padding: 50px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(transparent));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  position: absolute;
+  bottom: 0;
+}
+
+.department_info .academic_programs .academic_phases .undergraduate figcaption a,
+.department_info .academic_programs .academic_phases figure figcaption a,
+.department_info .academic_programs .academic_phases .graduate figcaption a {
+  font-size: 24px;
+  font-weight: 800;
+  color: wheat;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.department_info .academic_programs .academic_phases .undergraduate figcaption a:hover,
+.department_info .academic_programs .academic_phases figure figcaption a:hover,
+.department_info .academic_programs .academic_phases .graduate figcaption a:hover {
+  color: #f4b400;
 }
 
 footer {
-  background-color: black;
+  background-color: #001d2f;
 }
 
 footer .container {
   width: 90%;
-  color: white;
+  color: #ccd2d5;
 }
 
 footer .container .footer-content {
@@ -442,7 +626,7 @@ footer .container .footer-content .links .link_2 h3,
 footer .container .footer-content .links .link_3 h3 {
   font-size: 20px;
   font-weight: 800;
-  color: #ddd;
+  color: #ccd2d5;
   margin-bottom: 15px;
   margin-right: 15px;
   display: inline;
@@ -458,7 +642,7 @@ footer .container .footer-content .links .link_3 .listlinks li {
 footer .container .footer-content .links .link_1 .listlinks a,
 footer .container .footer-content .links .link_2 .listlinks a,
 footer .container .footer-content .links .link_3 .listlinks a {
-  color: #555;
+  color: #ccd2d5;
 }
 
 footer .container .footer-content .links .link_1 .listlinks a:hover,
@@ -547,6 +731,10 @@ footer .copyrights-socail {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px;
+  background-color: #001827;
+  border-radius: 0 1em;
+  font-size: 12px;
+  text-align: center;
 }
 
 footer .copyrights-socail a {
@@ -568,12 +756,12 @@ footer .copyrights-socail i:hover {
 @media (max-width: 768px) {
   footer .copyrights-socail {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   footer .copyrights-socail span {
-    margin-bottom: 15px;
+    margin-top: 10px;
   }
 }
 /*# sourceMappingURL=mathDepartment.css.map */

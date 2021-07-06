@@ -1,8 +1,8 @@
 footer {
-  background-color: black;
+  background-color: $space_black;
   .container {
     width: 90%;
-    color: white;
+    color: $off-withe;
     .footer-content {
       display: flex;
       justify-content: center;
@@ -34,7 +34,7 @@ footer {
           h3 {
             font-size: 20px;
             font-weight: 800;
-            color: #ddd;
+            color: $off-withe;
             margin-bottom: 15px;
             margin-right: 15px;
             display: inline;
@@ -45,7 +45,7 @@ footer {
               margin: 5px 0;
             }
             a {
-              color: #555;
+              color: $off-withe;
               &:hover {
                 color: #ea4335;
                 text-decoration: underline;
@@ -110,6 +110,10 @@ footer {
     justify-content: space-around;
     align-items: center;
     padding: 10px;
+    background-color: $Light_black;
+    border-radius: 0 1em;
+    font-size: 12px;
+    text-align: center;
     a {
       color: white;
     }
@@ -122,9 +126,9 @@ footer {
       }
     }
     @media (max-width: $larg) {
-      flex-direction: column;
+      flex-direction: column-reverse;
       span {
-        margin-bottom: 15px;
+        margin-top: 10px;
       }
     }
   }
