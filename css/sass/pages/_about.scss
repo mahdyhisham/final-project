@@ -1,0 +1,84 @@
+.about {
+  font-family: "Scheherazade", serif;
+  line-height: 2em;
+  word-spacing: 0.3em;
+  .box {
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    h2,
+    h3,
+    h4 {
+      color: $base-color;
+      margin: 20px 0;
+      text-align: center;
+      font-weight: bold;
+      font-size: 35px;
+    }
+    p,
+    li {
+      font-size: 25px;
+    }
+    ol {
+      list-style-position: inside;
+      li {
+        padding-right: 5px;
+      }
+    }
+    .headercontent {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+      .icon {
+        font-size: 50px;
+        cursor: pointer;
+        color: $base-color;
+        font-weight: bold;
+        font-size: 35px;
+        margin-right: 20px;
+        @media (max-width: $s-med) {
+          margin-right: 15px;
+        }
+      }
+    }
+    .texting,
+    .massageing,
+    .sure,
+    .learn,
+    .ways {
+      display: flex;
+      flex-direction: column;
+      border: 2px solid #333;
+      border-radius: 1em 3em;
+      box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5);
+      margin: 15px 0;
+      padding: 10px;
+      @media (max-width: $s-med) {
+        padding: 0 15px;
+      }
+    }
+    .texting {
+      background-color: $vilot;
+    }
+    .massageing {
+      background-color: $red;
+    }
+    .sure {
+      background-color: $yellow;
+    }
+    .learn {
+      background-color: $light_blue;
+    }
+    .ways {
+      background-color: $bluerish;
+      margin-bottom: 50px;
+    }
+    .letters {
+      display: none;
+    }
+    .show {
+      display: block;
+    }
+  }
+}

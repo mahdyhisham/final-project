@@ -1,6 +1,6 @@
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -182,8 +182,8 @@ header .container {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 header .container .bars {
@@ -208,11 +208,11 @@ header .container nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative;
 }
 
@@ -221,8 +221,8 @@ header .container nav ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 header .container nav ul li {
@@ -253,7 +253,7 @@ header .container nav ul li:not(:last-child) a::before {
   height: 3px;
   background-color: #21a6c7;
   -webkit-transform: scale(0.2);
-          transform: scale(0.2);
+  transform: scale(0.2);
   opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -262,7 +262,7 @@ header .container nav ul li:not(:last-child) a::before {
 header .container nav ul li:not(:last-child):hover a::before {
   opacity: 1;
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 
 header .container nav ul li:not(:last-child) {
@@ -281,8 +281,8 @@ header .container .menu {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -296,8 +296,8 @@ header .container .show {
   width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background-color: white;
   position: absolute;
   top: 100%;
@@ -334,13 +334,13 @@ header .container .show li:last-child {
 }
 
 .department_info .read_more {
-  background-color: #f4b400;
+  background-color: #4285f4;
 }
 
 .department_info .read_more:hover {
-  color: #f4b400;
+  color: #4285f4;
   background-color: #fff;
-  border-color: #f4b400;
+  border-color: #4285f4;
 }
 
 .department_info .overview {
@@ -349,14 +349,14 @@ header .container .show li:last-child {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .department_info .overview figure {
@@ -364,25 +364,25 @@ header .container .show li:last-child {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-radius: 2rem;
   -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.9);
-          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.9);
 }
 
 .department_info .overview figure img {
   border-radius: 2rem;
   -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  flex-basis: 100%;
   height: 350px;
 }
 
 .department_info .overview figcaption h1 {
-  color: #f4b400;
+  color: #4285f4;
 }
 
 .department_info .overview figcaption p {
@@ -398,19 +398,19 @@ header .container .show li:last-child {
 }
 
 .department_info .overview figcaption .name {
-  color: #f4b400;
+  color: #4285f4;
 }
 
 .department_info .mission_facilities {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   margin-top: 50px;
 }
 
 .department_info .mission_facilities .mission_content {
-  background-color: #f4b400;
+  background-color: #4285f4;
   color: #fff;
   padding: 25px;
 }
@@ -450,13 +450,13 @@ header .container .show li:last-child {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 25px;
 }
 
 .department_info .mission_facilities .facilities_content h1 {
-  color: #f4b400;
+  color: #4285f4;
 }
 
 .department_info .mission_facilities .facilities_content h5,
@@ -470,7 +470,7 @@ header .container .show li:last-child {
 
 .department_info .mission_facilities .facilities_content ul li::before {
   content: "\2022";
-  color: #f4b400;
+  color: #4285f4;
   font-weight: bold;
   display: inline-block;
   width: 1em;
@@ -479,7 +479,7 @@ header .container .show li:last-child {
 @media (max-width: 425px) {
   .department_info .mission_facilities {
     -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -490,7 +490,7 @@ header .container .show li:last-child {
 }
 
 .department_info .academic_programs h1 {
-  color: #f4b400;
+  color: #4285f4;
   text-align: center;
   padding-bottom: 25px;
 }
@@ -499,11 +499,11 @@ header .container .show li:last-child {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
+  grid-template-columns: auto auto;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-column-gap: 20px;
-          column-gap: 20px;
+  column-gap: 20px;
   padding-bottom: 50px;
 }
 
@@ -515,17 +515,17 @@ header .container .show li:last-child {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: relative;
   border-radius: 2rem;
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
-          box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
 }
 
 .department_info .academic_programs .academic_phases .undergraduate img,
@@ -539,13 +539,24 @@ header .container .show li:last-child {
 .department_info .academic_programs .academic_phases .graduate figcaption {
   width: 100%;
   padding: 50px;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(transparent));
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(0, 0, 0, 0.6)),
+    to(transparent)
+  );
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
   position: absolute;
   bottom: 0;
 }
 
-.department_info .academic_programs .academic_phases .undergraduate figcaption a,
+.department_info
+  .academic_programs
+  .academic_phases
+  .undergraduate
+  figcaption
+  a,
 .department_info .academic_programs .academic_phases figure figcaption a,
 .department_info .academic_programs .academic_phases .graduate figcaption a {
   font-size: 24px;
@@ -555,10 +566,20 @@ header .container .show li:last-child {
   transition: 0.3s;
 }
 
-.department_info .academic_programs .academic_phases .undergraduate figcaption a:hover,
+.department_info
+  .academic_programs
+  .academic_phases
+  .undergraduate
+  figcaption
+  a:hover,
 .department_info .academic_programs .academic_phases figure figcaption a:hover,
-.department_info .academic_programs .academic_phases .graduate figcaption a:hover {
-  color: #f4b400;
+.department_info
+  .academic_programs
+  .academic_phases
+  .graduate
+  figcaption
+  a:hover {
+  color: #4285f4;
 }
 
 footer {
@@ -575,13 +596,13 @@ footer .container .footer-content {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 footer .container .footer-content .logo {
@@ -589,11 +610,11 @@ footer .container .footer-content .logo {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 footer .container .footer-content .logo img {
@@ -607,11 +628,11 @@ footer .container .footer-content .links {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   margin: 40px 15px;
 }
 
@@ -672,7 +693,14 @@ footer .container .footer-content .links .fax-no-phone .listlinks h5 {
   margin-bottom: 5px;
 }
 
-footer .container .footer-content .links .fax-no-phone .listlinks h5:last-of-type a {
+footer
+  .container
+  .footer-content
+  .links
+  .fax-no-phone
+  .listlinks
+  h5:last-of-type
+  a {
   color: #c4372b;
   margin-right: 3px;
 }
@@ -696,15 +724,15 @@ footer .container .footer-content .links .listlinks.active {
 @media (max-width: 768px) {
   footer .container .footer-content .links {
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
     width: 100%;
   }
 }
@@ -719,8 +747,8 @@ footer .container .footer-content .links .listlinks.active {
   footer .container .footer-content .links {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -729,10 +757,10 @@ footer .copyrights-socail {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 10px;
   background-color: #001827;
   border-radius: 0 1em;
@@ -753,15 +781,15 @@ footer .copyrights-socail i {
 
 footer .copyrights-socail i:hover {
   -webkit-transform: translateY(-30%);
-          transform: translateY(-30%);
+  transform: translateY(-30%);
 }
 
 @media (max-width: 768px) {
   footer .copyrights-socail {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   footer .copyrights-socail span {
     margin-top: 10px;
