@@ -357,7 +357,7 @@ header .container .show li:last-child {
 
 .landing-page {
   height: 60vh;
-  background-image: url("../images/land-1.jpg");
+  background-image: url("../../images/land-1.jpg");
   background-position: center center;
   background-size: cover;
   position: relative;
