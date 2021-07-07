@@ -524,8 +524,8 @@ header .container .show li:last-child {
   justify-content: center;
   position: relative;
   border-radius: 2rem;
-  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 7px 15px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.6);
 }
 
 .department_info .academic_programs .academic_phases .undergraduate img,
