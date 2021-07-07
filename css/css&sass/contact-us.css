@@ -147,12 +147,12 @@ a {
 }
 
 .button a {
-  color: white;
+  color: #fff;
   font-weight: bold;
 }
 
 .button:hover {
-  background-color: white;
+  background-color: #fff;
   border: 1px solid #333;
 }
 
@@ -163,17 +163,17 @@ a {
 .read_more {
   padding: 0.7em 1.7em;
   border-radius: 10px 0;
-  border: 2px solid white;
+  border: 2px solid #fff;
   background-color: #83c6ee;
-  color: white;
+  color: #fff;
   margin-top: 20px;
-  color: white;
+  color: #fff;
   font-weight: 800;
 }
 
 .read_more:hover {
   color: #83c6ee;
-  background-color: white;
+  background-color: #fff;
   border: 2px solid #83c6ee;
 }
 
