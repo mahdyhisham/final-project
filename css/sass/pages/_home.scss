@@ -19,7 +19,7 @@
 // loading
 .landing-page {
   height: 60vh;
-  background-image: url("../images/land-1.jpg");
+  background-image: url("../../images/land-1.jpg");
   background-position: center center;
   background-size: cover; //ther is a problem in size in small media
   position: relative;
@@ -328,28 +328,15 @@
 
 .latest-news {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 35px;
+  padding: 0 20px;
   background-color: black;
   height: 65vh;
+  overflow: hidden;
   color: white;
-  .clip_contains {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    // align-items: center;
-    width: 99%;
-    height: 99%;
-    .left_clip {
-      width: 100%;
-      background-color: black;
-    }
-    .right_clip {
-      width: 100%;
-      background-color: black;
-    }
-  }
 }
 
 // End section last news

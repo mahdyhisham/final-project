@@ -15,8 +15,6 @@ preloading();
 
 // loading animation
 
-//
-
 //????
 // containue onscroll functioon
 
@@ -140,6 +138,8 @@ function typing() {
 }
 typing();
 // Dean's message
+
+// last news section slider horizontal
 
 // footer list-show-hide
 

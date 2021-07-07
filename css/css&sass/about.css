@@ -428,23 +428,28 @@ header .container .show li:last-child {
 }
 
 .about .box .texting {
-  background-color: #4285f4;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#aadfec), to(#21a6c7));
+  background-image: linear-gradient(to bottom, #aadfec, #21a6c7);
 }
 
 .about .box .massageing {
-  background-color: #db4437;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#aadfec), to(#21a6c7));
+  background-image: linear-gradient(to top, #aadfec, #21a6c7);
 }
 
 .about .box .sure {
-  background-color: #f4b400;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#aadfec), to(#21a6c7));
+  background-image: linear-gradient(to top, #aadfec, #21a6c7);
 }
 
 .about .box .learn {
-  background-color: #03dac6;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#aadfec), to(#21a6c7));
+  background-image: linear-gradient(to top, #aadfec, #21a6c7);
 }
 
 .about .box .ways {
-  background-color: #83c6ee;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#aadfec), to(#21a6c7));
+  background-image: linear-gradient(to top, #aadfec, #21a6c7);
   margin-bottom: 50px;
 }
 

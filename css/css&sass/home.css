@@ -1,6 +1,6 @@
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -182,8 +182,8 @@ header .container {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 header .container .bars {
@@ -208,11 +208,11 @@ header .container nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative;
 }
 
@@ -221,8 +221,8 @@ header .container nav ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 header .container nav ul li {
@@ -253,7 +253,7 @@ header .container nav ul li:not(:last-child) a::before {
   height: 3px;
   background-color: #21a6c7;
   -webkit-transform: scale(0.2);
-          transform: scale(0.2);
+  transform: scale(0.2);
   opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -262,7 +262,7 @@ header .container nav ul li:not(:last-child) a::before {
 header .container nav ul li:not(:last-child):hover a::before {
   opacity: 1;
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 
 header .container nav ul li:not(:last-child) {
@@ -281,8 +281,8 @@ header .container .menu {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -296,8 +296,8 @@ header .container .show {
   width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background-color: white;
   position: absolute;
   top: 100%;
@@ -336,11 +336,11 @@ header .container .show li:last-child {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -357,7 +357,7 @@ header .container .show li:last-child {
 
 .landing-page {
   height: 60vh;
-  background-image: url("../images/land-1.jpg");
+  background-image: url("../../images/land-1.jpg");
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -366,18 +366,18 @@ header .container .show li:last-child {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-transition: 1s;
   transition: 1s;
   -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
+  transition-delay: 0.3s;
 }
 
 .landing-page .over-lay {
@@ -386,8 +386,18 @@ header .container .show li:last-child {
   height: 100%;
   left: 0;
   top: 0;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(25%, rgba(0, 0, 0, 0.6)), to(transparent));
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 25%, transparent);
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(25%, rgba(0, 0, 0, 0.6)),
+    to(transparent)
+  );
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.6) 25%,
+    transparent
+  );
   z-index: 1;
 }
 
@@ -397,7 +407,7 @@ header .container .show li:last-child {
   padding: 20px;
   border-radius: 5px;
   -webkit-box-shadow: 0 0 8px;
-          box-shadow: 0 0 8px;
+  box-shadow: 0 0 8px;
   z-index: 2;
 }
 
@@ -481,19 +491,19 @@ header .container .show li:last-child {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 @media (max-width: 767px) {
   .about-choice .dean-message {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -503,7 +513,7 @@ header .container .show li:last-child {
 
 .about-choice .dean-message .dean-info .dean-image {
   -webkit-box-shadow: 0 0 10px;
-          box-shadow: 0 0 10px;
+  box-shadow: 0 0 10px;
   border-radius: 10px 0;
   -webkit-transition: 2s;
   transition: 2s;
@@ -514,11 +524,11 @@ header .container .show li:last-child {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 80%;
   height: 25%;
   position: absolute;
@@ -526,7 +536,7 @@ header .container .show li:last-child {
   left: 20px;
   background-color: rgba(0, 0, 0, 0.3);
   -webkit-transform: scaleY(0);
-          transform: scaleY(0);
+  transform: scaleY(0);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -537,12 +547,12 @@ header .container .show li:last-child {
 
 .about-choice .dean-message .dean-info:hover .dean-name {
   -webkit-transform: scaleY(1);
-          transform: scaleY(1);
+  transform: scaleY(1);
 }
 
 .about-choice .dean-message .dean-info:hover .dean-image {
   -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .about-choice .dean-message .words-more {
@@ -599,12 +609,12 @@ header .container .show li:last-child {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -629,35 +639,38 @@ header .container .show li:last-child {
 .choice .choice-content .slides .first-slide {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  -ms-grid-columns: (minmax(300px, 1fr)) [auto-fill];
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   gap: 10px;
 }
 
-.choice .choice-content .slides .first-slide .col-1, .choice .choice-content .slides .first-slide .col-2,
+.choice .choice-content .slides .first-slide .col-1,
+.choice .choice-content .slides .first-slide .col-2,
 .choice .choice-content .slides .first-slide .col-3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   overflow: hidden;
 }
 
-.choice .choice-content .slides .first-slide .col-1 .first-figure, .choice .choice-content .slides .first-slide .col-2 .first-figure, .choice .choice-content .slides .first-slide .col-2 .only-figure,
+.choice .choice-content .slides .first-slide .col-1 .first-figure,
+.choice .choice-content .slides .first-slide .col-2 .first-figure,
+.choice .choice-content .slides .first-slide .col-2 .only-figure,
 .choice .choice-content .slides .first-slide .col-1 .second-figure,
 .choice .choice-content .slides .first-slide .col-2 .second-figure,
 .choice .choice-content .slides .first-slide .col-3 .first-figure,
@@ -668,7 +681,9 @@ header .container .show li:last-child {
   overflow: hidden;
 }
 
-.choice .choice-content .slides .first-slide .col-1 .first-figure figure, .choice .choice-content .slides .first-slide .col-2 .first-figure figure, .choice .choice-content .slides .first-slide .col-2 .only-figure figure,
+.choice .choice-content .slides .first-slide .col-1 .first-figure figure,
+.choice .choice-content .slides .first-slide .col-2 .first-figure figure,
+.choice .choice-content .slides .first-slide .col-2 .only-figure figure,
 .choice .choice-content .slides .first-slide .col-1 .second-figure figure,
 .choice .choice-content .slides .first-slide .col-2 .second-figure figure,
 .choice .choice-content .slides .first-slide .col-3 .first-figure figure,
@@ -679,12 +694,30 @@ header .container .show li:last-child {
   overflow: hidden;
 }
 
-.choice .choice-content .slides .first-slide .col-1 .first-figure figure img, .choice .choice-content .slides .first-slide .col-2 .first-figure figure img, .choice .choice-content .slides .first-slide .col-2 .only-figure figure img,
+.choice .choice-content .slides .first-slide .col-1 .first-figure figure img,
+.choice .choice-content .slides .first-slide .col-2 .first-figure figure img,
+.choice .choice-content .slides .first-slide .col-2 .only-figure figure img,
 .choice .choice-content .slides .first-slide .col-1 .second-figure figure img,
 .choice .choice-content .slides .first-slide .col-2 .second-figure figure img,
 .choice .choice-content .slides .first-slide .col-3 .first-figure figure img,
-.choice .choice-content .slides .first-slide .col-3 .col-2 .only-figure figure img,
-.choice .choice-content .slides .first-slide .col-2 .col-3 .only-figure figure img,
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-3
+  .col-2
+  .only-figure
+  figure
+  img,
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-2
+  .col-3
+  .only-figure
+  figure
+  img,
 .choice .choice-content .slides .first-slide .col-3 .second-figure figure img {
   width: 100%;
   -webkit-transition: 2s;
@@ -692,13 +725,80 @@ header .container .show li:last-child {
   margin-bottom: 10px;
 }
 
-.choice .choice-content .slides .first-slide .col-1 .first-figure figure .heading, .choice .choice-content .slides .first-slide .col-2 .first-figure figure .heading, .choice .choice-content .slides .first-slide .col-2 .only-figure figure .heading,
-.choice .choice-content .slides .first-slide .col-1 .second-figure figure .heading,
-.choice .choice-content .slides .first-slide .col-2 .second-figure figure .heading,
-.choice .choice-content .slides .first-slide .col-3 .first-figure figure .heading,
-.choice .choice-content .slides .first-slide .col-3 .col-2 .only-figure figure .heading,
-.choice .choice-content .slides .first-slide .col-2 .col-3 .only-figure figure .heading,
-.choice .choice-content .slides .first-slide .col-3 .second-figure figure .heading {
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-1
+  .first-figure
+  figure
+  .heading,
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-2
+  .first-figure
+  figure
+  .heading,
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-2
+  .only-figure
+  figure
+  .heading,
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-1
+  .second-figure
+  figure
+  .heading,
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-2
+  .second-figure
+  figure
+  .heading,
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-3
+  .first-figure
+  figure
+  .heading,
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-3
+  .col-2
+  .only-figure
+  figure
+  .heading,
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-2
+  .col-3
+  .only-figure
+  figure
+  .heading,
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-3
+  .second-figure
+  figure
+  .heading {
   width: 100%;
   padding: 15px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -709,56 +809,324 @@ header .container .show li:last-child {
   left: 0;
   opacity: 0;
   -webkit-transform: translateY(-25%);
-          transform: translateY(-25%);
+  transform: translateY(-25%);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   z-index: 2;
 }
 
 @media (max-width: 991px) {
-  .choice .choice-content .slides .first-slide .col-1 .first-figure figure .heading, .choice .choice-content .slides .first-slide .col-2 .first-figure figure .heading, .choice .choice-content .slides .first-slide .col-2 .only-figure figure .heading,
-  .choice .choice-content .slides .first-slide .col-1 .second-figure figure .heading,
-  .choice .choice-content .slides .first-slide .col-2 .second-figure figure .heading,
-  .choice .choice-content .slides .first-slide .col-3 .first-figure figure .heading,
-  .choice .choice-content .slides .first-slide .col-3 .col-2 .only-figure figure .heading,
-  .choice .choice-content .slides .first-slide .col-2 .col-3 .only-figure figure .heading,
-  .choice .choice-content .slides .first-slide .col-3 .second-figure figure .heading {
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-1
+    .first-figure
+    figure
+    .heading,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-2
+    .first-figure
+    figure
+    .heading,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-2
+    .only-figure
+    figure
+    .heading,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-1
+    .second-figure
+    figure
+    .heading,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-2
+    .second-figure
+    figure
+    .heading,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-3
+    .first-figure
+    figure
+    .heading,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-3
+    .col-2
+    .only-figure
+    figure
+    .heading,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-2
+    .col-3
+    .only-figure
+    figure
+    .heading,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-3
+    .second-figure
+    figure
+    .heading {
     padding: 10px;
     font-size: 16px;
   }
 }
 
 @media (max-width: 768px) {
-  .choice .choice-content .slides .first-slide .col-1 .first-figure figure .heading, .choice .choice-content .slides .first-slide .col-2 .first-figure figure .heading, .choice .choice-content .slides .first-slide .col-2 .only-figure figure .heading,
-  .choice .choice-content .slides .first-slide .col-1 .second-figure figure .heading,
-  .choice .choice-content .slides .first-slide .col-2 .second-figure figure .heading,
-  .choice .choice-content .slides .first-slide .col-3 .first-figure figure .heading,
-  .choice .choice-content .slides .first-slide .col-3 .col-2 .only-figure figure .heading,
-  .choice .choice-content .slides .first-slide .col-2 .col-3 .only-figure figure .heading,
-  .choice .choice-content .slides .first-slide .col-3 .second-figure figure .heading {
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-1
+    .first-figure
+    figure
+    .heading,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-2
+    .first-figure
+    figure
+    .heading,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-2
+    .only-figure
+    figure
+    .heading,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-1
+    .second-figure
+    figure
+    .heading,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-2
+    .second-figure
+    figure
+    .heading,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-3
+    .first-figure
+    figure
+    .heading,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-3
+    .col-2
+    .only-figure
+    figure
+    .heading,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-2
+    .col-3
+    .only-figure
+    figure
+    .heading,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-3
+    .second-figure
+    figure
+    .heading {
     padding: 5px;
   }
 }
 
 @media (max-width: 575px) {
-  .choice .choice-content .slides .first-slide .col-1 .first-figure figure .heading, .choice .choice-content .slides .first-slide .col-2 .first-figure figure .heading, .choice .choice-content .slides .first-slide .col-2 .only-figure figure .heading,
-  .choice .choice-content .slides .first-slide .col-1 .second-figure figure .heading,
-  .choice .choice-content .slides .first-slide .col-2 .second-figure figure .heading,
-  .choice .choice-content .slides .first-slide .col-3 .first-figure figure .heading,
-  .choice .choice-content .slides .first-slide .col-3 .col-2 .only-figure figure .heading,
-  .choice .choice-content .slides .first-slide .col-2 .col-3 .only-figure figure .heading,
-  .choice .choice-content .slides .first-slide .col-3 .second-figure figure .heading {
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-1
+    .first-figure
+    figure
+    .heading,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-2
+    .first-figure
+    figure
+    .heading,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-2
+    .only-figure
+    figure
+    .heading,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-1
+    .second-figure
+    figure
+    .heading,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-2
+    .second-figure
+    figure
+    .heading,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-3
+    .first-figure
+    figure
+    .heading,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-3
+    .col-2
+    .only-figure
+    figure
+    .heading,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-2
+    .col-3
+    .only-figure
+    figure
+    .heading,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-3
+    .second-figure
+    figure
+    .heading {
     display: none;
   }
 }
 
-.choice .choice-content .slides .first-slide .col-1 .first-figure figure figcaption, .choice .choice-content .slides .first-slide .col-2 .first-figure figure figcaption, .choice .choice-content .slides .first-slide .col-2 .only-figure figure figcaption,
-.choice .choice-content .slides .first-slide .col-1 .second-figure figure figcaption,
-.choice .choice-content .slides .first-slide .col-2 .second-figure figure figcaption,
-.choice .choice-content .slides .first-slide .col-3 .first-figure figure figcaption,
-.choice .choice-content .slides .first-slide .col-3 .col-2 .only-figure figure figcaption,
-.choice .choice-content .slides .first-slide .col-2 .col-3 .only-figure figure figcaption,
-.choice .choice-content .slides .first-slide .col-3 .second-figure figure figcaption {
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-1
+  .first-figure
+  figure
+  figcaption,
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-2
+  .first-figure
+  figure
+  figcaption,
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-2
+  .only-figure
+  figure
+  figcaption,
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-1
+  .second-figure
+  figure
+  figcaption,
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-2
+  .second-figure
+  figure
+  figcaption,
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-3
+  .first-figure
+  figure
+  figcaption,
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-3
+  .col-2
+  .only-figure
+  figure
+  figcaption,
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-2
+  .col-3
+  .only-figure
+  figure
+  figcaption,
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-3
+  .second-figure
+  figure
+  figcaption {
   width: 100%;
   padding: 5px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -769,137 +1137,531 @@ header .container .show li:last-child {
   bottom: 10%;
   opacity: 0;
   -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+  transform: translateY(50%);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   z-index: 2;
 }
 
 @media (max-width: 991px) {
-  .choice .choice-content .slides .first-slide .col-1 .first-figure figure figcaption, .choice .choice-content .slides .first-slide .col-2 .first-figure figure figcaption, .choice .choice-content .slides .first-slide .col-2 .only-figure figure figcaption,
-  .choice .choice-content .slides .first-slide .col-1 .second-figure figure figcaption,
-  .choice .choice-content .slides .first-slide .col-2 .second-figure figure figcaption,
-  .choice .choice-content .slides .first-slide .col-3 .first-figure figure figcaption,
-  .choice .choice-content .slides .first-slide .col-3 .col-2 .only-figure figure figcaption,
-  .choice .choice-content .slides .first-slide .col-2 .col-3 .only-figure figure figcaption,
-  .choice .choice-content .slides .first-slide .col-3 .second-figure figure figcaption {
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-1
+    .first-figure
+    figure
+    figcaption,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-2
+    .first-figure
+    figure
+    figcaption,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-2
+    .only-figure
+    figure
+    figcaption,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-1
+    .second-figure
+    figure
+    figcaption,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-2
+    .second-figure
+    figure
+    figcaption,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-3
+    .first-figure
+    figure
+    figcaption,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-3
+    .col-2
+    .only-figure
+    figure
+    figcaption,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-2
+    .col-3
+    .only-figure
+    figure
+    figcaption,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-3
+    .second-figure
+    figure
+    figcaption {
     padding: 0;
     font-size: 12px;
   }
 }
 
 @media (max-width: 768px) {
-  .choice .choice-content .slides .first-slide .col-1 .first-figure figure figcaption, .choice .choice-content .slides .first-slide .col-2 .first-figure figure figcaption, .choice .choice-content .slides .first-slide .col-2 .only-figure figure figcaption,
-  .choice .choice-content .slides .first-slide .col-1 .second-figure figure figcaption,
-  .choice .choice-content .slides .first-slide .col-2 .second-figure figure figcaption,
-  .choice .choice-content .slides .first-slide .col-3 .first-figure figure figcaption,
-  .choice .choice-content .slides .first-slide .col-3 .col-2 .only-figure figure figcaption,
-  .choice .choice-content .slides .first-slide .col-2 .col-3 .only-figure figure figcaption,
-  .choice .choice-content .slides .first-slide .col-3 .second-figure figure figcaption {
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-1
+    .first-figure
+    figure
+    figcaption,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-2
+    .first-figure
+    figure
+    figcaption,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-2
+    .only-figure
+    figure
+    figcaption,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-1
+    .second-figure
+    figure
+    figcaption,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-2
+    .second-figure
+    figure
+    figcaption,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-3
+    .first-figure
+    figure
+    figcaption,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-3
+    .col-2
+    .only-figure
+    figure
+    figcaption,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-2
+    .col-3
+    .only-figure
+    figure
+    figcaption,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-3
+    .second-figure
+    figure
+    figcaption {
     padding: 0;
     font-size: 12px;
   }
 }
 
 @media (max-width: 768px) {
-  .choice .choice-content .slides .first-slide .col-1 .first-figure figure figcaption, .choice .choice-content .slides .first-slide .col-2 .first-figure figure figcaption, .choice .choice-content .slides .first-slide .col-2 .only-figure figure figcaption,
-  .choice .choice-content .slides .first-slide .col-1 .second-figure figure figcaption,
-  .choice .choice-content .slides .first-slide .col-2 .second-figure figure figcaption,
-  .choice .choice-content .slides .first-slide .col-3 .first-figure figure figcaption,
-  .choice .choice-content .slides .first-slide .col-3 .col-2 .only-figure figure figcaption,
-  .choice .choice-content .slides .first-slide .col-2 .col-3 .only-figure figure figcaption,
-  .choice .choice-content .slides .first-slide .col-3 .second-figure figure figcaption {
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-1
+    .first-figure
+    figure
+    figcaption,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-2
+    .first-figure
+    figure
+    figcaption,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-2
+    .only-figure
+    figure
+    figcaption,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-1
+    .second-figure
+    figure
+    figcaption,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-2
+    .second-figure
+    figure
+    figcaption,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-3
+    .first-figure
+    figure
+    figcaption,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-3
+    .col-2
+    .only-figure
+    figure
+    figcaption,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-2
+    .col-3
+    .only-figure
+    figure
+    figcaption,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-3
+    .second-figure
+    figure
+    figcaption {
     padding: 0;
     font-size: 12px;
   }
 }
 
 @media (max-width: 575px) {
-  .choice .choice-content .slides .first-slide .col-1 .first-figure figure figcaption, .choice .choice-content .slides .first-slide .col-2 .first-figure figure figcaption, .choice .choice-content .slides .first-slide .col-2 .only-figure figure figcaption,
-  .choice .choice-content .slides .first-slide .col-1 .second-figure figure figcaption,
-  .choice .choice-content .slides .first-slide .col-2 .second-figure figure figcaption,
-  .choice .choice-content .slides .first-slide .col-3 .first-figure figure figcaption,
-  .choice .choice-content .slides .first-slide .col-3 .col-2 .only-figure figure figcaption,
-  .choice .choice-content .slides .first-slide .col-2 .col-3 .only-figure figure figcaption,
-  .choice .choice-content .slides .first-slide .col-3 .second-figure figure figcaption {
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-1
+    .first-figure
+    figure
+    figcaption,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-2
+    .first-figure
+    figure
+    figcaption,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-2
+    .only-figure
+    figure
+    figcaption,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-1
+    .second-figure
+    figure
+    figcaption,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-2
+    .second-figure
+    figure
+    figcaption,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-3
+    .first-figure
+    figure
+    figcaption,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-3
+    .col-2
+    .only-figure
+    figure
+    figcaption,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-2
+    .col-3
+    .only-figure
+    figure
+    figcaption,
+  .choice
+    .choice-content
+    .slides
+    .first-slide
+    .col-3
+    .second-figure
+    figure
+    figcaption {
     display: none;
   }
 }
 
-.choice .choice-content .slides .first-slide .col-1 .first-figure:hover img, .choice .choice-content .slides .first-slide .col-2 .first-figure:hover img, .choice .choice-content .slides .first-slide .col-2 .only-figure:hover img,
+.choice .choice-content .slides .first-slide .col-1 .first-figure:hover img,
+.choice .choice-content .slides .first-slide .col-2 .first-figure:hover img,
+.choice .choice-content .slides .first-slide .col-2 .only-figure:hover img,
 .choice .choice-content .slides .first-slide .col-1 .second-figure:hover img,
 .choice .choice-content .slides .first-slide .col-2 .second-figure:hover img,
 .choice .choice-content .slides .first-slide .col-3 .first-figure:hover img,
-.choice .choice-content .slides .first-slide .col-3 .col-2 .only-figure:hover img,
-.choice .choice-content .slides .first-slide .col-2 .col-3 .only-figure:hover img,
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-3
+  .col-2
+  .only-figure:hover
+  img,
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-2
+  .col-3
+  .only-figure:hover
+  img,
 .choice .choice-content .slides .first-slide .col-3 .second-figure:hover img {
   -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
 }
 
-.choice .choice-content .slides .first-slide .col-1 .first-figure:hover .heading, .choice .choice-content .slides .first-slide .col-2 .first-figure:hover .heading, .choice .choice-content .slides .first-slide .col-2 .only-figure:hover .heading,
-.choice .choice-content .slides .first-slide .col-1 .second-figure:hover .heading,
-.choice .choice-content .slides .first-slide .col-2 .second-figure:hover .heading,
-.choice .choice-content .slides .first-slide .col-3 .first-figure:hover .heading,
-.choice .choice-content .slides .first-slide .col-3 .col-2 .only-figure:hover .heading,
-.choice .choice-content .slides .first-slide .col-2 .col-3 .only-figure:hover .heading,
-.choice .choice-content .slides .first-slide .col-3 .second-figure:hover .heading {
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-1
+  .first-figure:hover
+  .heading,
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-2
+  .first-figure:hover
+  .heading,
+.choice .choice-content .slides .first-slide .col-2 .only-figure:hover .heading,
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-1
+  .second-figure:hover
+  .heading,
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-2
+  .second-figure:hover
+  .heading,
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-3
+  .first-figure:hover
+  .heading,
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-3
+  .col-2
+  .only-figure:hover
+  .heading,
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-2
+  .col-3
+  .only-figure:hover
+  .heading,
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-3
+  .second-figure:hover
+  .heading {
   opacity: 1;
   -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 
-.choice .choice-content .slides .first-slide .col-1 .first-figure:hover figcaption, .choice .choice-content .slides .first-slide .col-2 .first-figure:hover figcaption, .choice .choice-content .slides .first-slide .col-2 .only-figure:hover figcaption,
-.choice .choice-content .slides .first-slide .col-1 .second-figure:hover figcaption,
-.choice .choice-content .slides .first-slide .col-2 .second-figure:hover figcaption,
-.choice .choice-content .slides .first-slide .col-3 .first-figure:hover figcaption,
-.choice .choice-content .slides .first-slide .col-3 .col-2 .only-figure:hover figcaption,
-.choice .choice-content .slides .first-slide .col-2 .col-3 .only-figure:hover figcaption,
-.choice .choice-content .slides .first-slide .col-3 .second-figure:hover figcaption {
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-1
+  .first-figure:hover
+  figcaption,
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-2
+  .first-figure:hover
+  figcaption,
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-2
+  .only-figure:hover
+  figcaption,
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-1
+  .second-figure:hover
+  figcaption,
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-2
+  .second-figure:hover
+  figcaption,
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-3
+  .first-figure:hover
+  figcaption,
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-3
+  .col-2
+  .only-figure:hover
+  figcaption,
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-2
+  .col-3
+  .only-figure:hover
+  figcaption,
+.choice
+  .choice-content
+  .slides
+  .first-slide
+  .col-3
+  .second-figure:hover
+  figcaption {
   opacity: 1;
   -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 
 @media (max-width: 991px) {
   .choice .choice-content .slides .first-slide {
-    -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    -ms-grid-columns: (minmax(200px, 1fr)) [auto-fill];
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 }
 
 @media (max-width: 768px) {
   .choice .choice-content .slides .first-slide {
-    -ms-grid-columns: (minmax(150px, 1fr))[auto-fill];
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    -ms-grid-columns: (minmax(150px, 1fr)) [auto-fill];
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
 }
 
 @media (max-width: 575px) {
   .choice .choice-content .slides .first-slide {
-    -ms-grid-columns: (minmax(100px, 1fr))[auto-fill];
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    -ms-grid-columns: (minmax(100px, 1fr)) [auto-fill];
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   }
 }
 
 @media (max-width: 425px) {
   .choice .choice-content .slides .first-slide {
-    -ms-grid-columns: (minmax(100px, 1fr))[auto-fill];
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    -ms-grid-columns: (minmax(100px, 1fr)) [auto-fill];
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   }
 }
 
 @media (max-width: 375px) {
   .choice .choice-content .slides .first-slide {
-    -ms-grid-columns: (minmax(80px, 1fr))[auto-fill];
-        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    -ms-grid-columns: (minmax(80px, 1fr)) [auto-fill];
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
   }
 }
 
 @media (max-width: 320px) {
   .choice .choice-content .slides .first-slide {
-    -ms-grid-columns: (minmax(75px, 1fr))[auto-fill];
-        grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+    -ms-grid-columns: (minmax(75px, 1fr)) [auto-fill];
+    grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
   }
 }
 
@@ -911,38 +1673,22 @@ header .container .show li:last-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-top: 35px;
+  padding: 0 20px;
   background-color: black;
   height: 65vh;
+  overflow: hidden;
   color: white;
-}
-
-.latest-news .clip_contains {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 99%;
-  height: 99%;
-}
-
-.latest-news .clip_contains .left_clip {
-  width: 100%;
-  background-color: black;
-}
-
-.latest-news .clip_contains .right_clip {
-  width: 100%;
-  background-color: black;
 }
 
 .events {
@@ -951,7 +1697,7 @@ header .container .show li:last-child {
   -webkit-transition: all 2s;
   transition: all 2s;
   -webkit-transform: translateY(80%);
-          transform: translateY(80%);
+  transform: translateY(80%);
   opacity: 0;
 }
 
@@ -960,15 +1706,15 @@ header .container .show li:last-child {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .events .event-content h1 {
@@ -981,13 +1727,13 @@ header .container .show li:last-child {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 0 15px;
   -webkit-perspective: 1000px;
-          perspective: 1000px;
+  perspective: 1000px;
   -webkit-transition: all 1.5s;
   transition: all 1.5s;
 }
@@ -999,7 +1745,7 @@ header .container .show li:last-child {
   overflow: hidden;
   border-radius: 10px;
   -webkit-box-shadow: 2px 5px 10px #999;
-          box-shadow: 2px 5px 10px #999;
+  box-shadow: 2px 5px 10px #999;
   opacity: 0.7;
   -webkit-transition: 1s;
   transition: 1s;
@@ -1069,25 +1815,25 @@ header .container .show li:last-child {
 
 .events .event-content .events-cards .card:nth-child(2) {
   -webkit-transform: translateZ(100px);
-          transform: translateZ(100px);
+  transform: translateZ(100px);
   opacity: 1;
 }
 
 .events .event-content .events-cards .card:hover {
   -webkit-transform: translateZ(35px);
-          transform: translateZ(35px);
+  transform: translateZ(35px);
   opacity: 1;
 }
 
 .events .event-content .events-cards .card:hover .card-info {
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 @media (max-width: 768px) {
   .events .event-content .events-cards .card:hover .card-info {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
@@ -1104,14 +1850,14 @@ header .container .show li:last-child {
   .events .event-content .events-cards {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
 .events.active {
   -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
   opacity: 1;
 }
 
@@ -1129,13 +1875,13 @@ footer .container .footer-content {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 footer .container .footer-content .logo {
@@ -1143,11 +1889,11 @@ footer .container .footer-content .logo {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 footer .container .footer-content .logo img {
@@ -1161,11 +1907,11 @@ footer .container .footer-content .links {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   margin: 40px 15px;
 }
 
@@ -1226,7 +1972,14 @@ footer .container .footer-content .links .fax-no-phone .listlinks h5 {
   margin-bottom: 5px;
 }
 
-footer .container .footer-content .links .fax-no-phone .listlinks h5:last-of-type a {
+footer
+  .container
+  .footer-content
+  .links
+  .fax-no-phone
+  .listlinks
+  h5:last-of-type
+  a {
   color: #c4372b;
   margin-right: 3px;
 }
@@ -1250,15 +2003,15 @@ footer .container .footer-content .links .listlinks.active {
 @media (max-width: 768px) {
   footer .container .footer-content .links {
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
     width: 100%;
   }
 }
@@ -1273,8 +2026,8 @@ footer .container .footer-content .links .listlinks.active {
   footer .container .footer-content .links {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -1283,10 +2036,10 @@ footer .copyrights-socail {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 10px;
   background-color: #001827;
   border-radius: 0 1em;
@@ -1307,15 +2060,15 @@ footer .copyrights-socail i {
 
 footer .copyrights-socail i:hover {
   -webkit-transform: translateY(-30%);
-          transform: translateY(-30%);
+  transform: translateY(-30%);
 }
 
 @media (max-width: 768px) {
   footer .copyrights-socail {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   footer .copyrights-socail span {
     margin-top: 10px;
