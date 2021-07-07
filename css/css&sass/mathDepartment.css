@@ -378,7 +378,8 @@ header .container .show li:last-child {
   border-radius: 2rem;
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
-  height: 350px;
+  height: 100%;
+  width: 50%;
 }
 
 .department_info .overview figcaption h1 {
@@ -550,7 +551,28 @@ header .container .show li:last-child {
   position: absolute;
   bottom: 0;
 }
-
+@media (max-width: 425px) {
+  .department_info
+    .academic_programs
+    .academic_phases
+    .undergraduate
+    figcaption,
+  .department_info .academic_programs .academic_phases figure figcaption,
+  .department_info .academic_programs .academic_phases .graduate figcaption {
+    padding: 25px;
+  }
+}
+@media (max-width: 320px) {
+  .department_info
+    .academic_programs
+    .academic_phases
+    .undergraduate
+    figcaption,
+  .department_info .academic_programs .academic_phases figure figcaption,
+  .department_info .academic_programs .academic_phases .graduate figcaption {
+    padding: 10px;
+  }
+}
 .department_info
   .academic_programs
   .academic_phases
@@ -564,6 +586,18 @@ header .container .show li:last-child {
   color: wheat;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+@media (max-width: 425px) {
+  .department_info
+    .academic_programs
+    .academic_phases
+    .undergraduate
+    figcaption
+    a,
+  .department_info .academic_programs .academic_phases figure figcaption a,
+  .department_info .academic_programs .academic_phases .graduate figcaption a {
+    font-size: 16px;
+  }
 }
 
 .department_info
