@@ -14,6 +14,9 @@
     <link rel="shortcut icon" type="images/x-icon" href="images/icon.png" />
 
     <link rel="stylesheet" href="css/css&sass/home.css" />
+    <link rel="stylesheet" href="css/css&sass/splide.min.css" />
+    <!-- <link rel="stylesheet" href="css/splide-skyblue.min.css" /> -->
+    <link rel="stylesheet" href="css/css&sass/splide-sea-green.min.css" />
     <title>Home | Faculty of Science</title>
   </head>
   <body>
@@ -217,21 +220,39 @@
     <!-- Strat section last news -->
 
     <section class="latest-news">
-      <h1>Last News</h1>
       <div class="news_contains">
-        <div class="item">1</div>
-        <div class="item">2</div>
-        <div class="item">3</div>
-        <div class="item">4</div>
-        <div class="item">5</div>
-        <div class="item">6</div>
-        <div class="item">7</div>
-        <div class="item">8</div>
-        <div class="item">9</div>
-        <div class="item">10</div>
+        <h1>Last News</h1>
+        <div class="splide">
+          <!-- <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--prev">Prev</button>
+            <button class="splide__arrow splide__arrow--next">Next</button>
+          </div> -->
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div>
+                  <img src="images/chemistry.jpg" alt="" />
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div>
+                  <img src="images/chemistry.jpg" alt="" />
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div>
+                  <img src="images/chemistry.jpg" alt="" />
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div>
+                  <img src="images/chemistry.jpg" alt="" />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <!-- controls -->
-      <div class="controls"></div>
     </section>
 
     <!-- Strat section last news -->
@@ -379,5 +400,17 @@
     </footer>
     <!-- End Footer -->
     <script src="js/home.js"></script>
+    <!--  -->
+    <script src="js/splide.min.js"></script>
+    <script>
+      new Splide(".splide", {
+        type: "loop",
+        autoWidth: true,
+        interval: 2000,
+        speed: 500,
+        focus: "center",
+        autoplay: true,
+      }).mount();
+    </script>
   </body>
 </html>

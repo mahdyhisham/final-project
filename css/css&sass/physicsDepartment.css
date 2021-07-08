@@ -435,7 +435,7 @@ header .container .show li:last-child {
 
 .department_info .mission_facilities .mission_content ul li::before {
   content: "\2022";
-  color: #db4437;
+  color: #fff;
   font-weight: bold;
   display: inline-block;
   width: 1em;

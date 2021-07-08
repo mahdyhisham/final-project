@@ -328,17 +328,26 @@
 
 .latest-news {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   margin-top: 35px;
-  padding: 0 20px;
   background-color: black;
-  height: 65vh;
-  overflow: hidden;
   color: white;
+  overflow: hidden;
+  .news_contains {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    .splide {
+      padding: 0 1em 2em;
+      .splide__slide {
+        margin: 30px;
+      }
+    }
+  }
 }
-
 // End section last news
 
 // Start Events

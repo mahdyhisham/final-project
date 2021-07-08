@@ -56,7 +56,7 @@ var menuTogg = document.querySelector(".bars"),
   list = document.querySelector(".list");
 
 function toggleMenu() {
-  menuTogg.addEventListener("click", (e) => {
+  menuTogg.addEventListener("click", () => {
     navg.classList.toggle("menu");
     list.classList.toggle("show");
   });
