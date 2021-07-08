@@ -462,7 +462,7 @@ header .container .show li:last-child {
 }
 
 footer {
-  background-color: #001d2f;
+  background-color: black;
 }
 
 footer .container {
@@ -634,7 +634,7 @@ footer .copyrights-socail {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px;
-  background-color: #001827;
+  background-color: black;
   border-radius: 0 1em;
   font-size: 12px;
   text-align: center;

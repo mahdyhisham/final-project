@@ -616,9 +616,104 @@ header .container .show li:last-child {
   a:hover {
   color: #0f9d58;
 }
+.staff {
+  min-height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 35px;
+  margin-bottom: 100px;
+  background-color: #0f9d58;
+  color: white;
+  overflow: hidden;
+}
 
+.staff .news_contains {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #0f9d58;
+}
+
+.staff .news_contains .splide {
+  padding: 0 1em 2em;
+}
+
+.staff .news_contains .splide .splide__slide {
+  margin: 20px;
+}
+
+.staff .news_contains .splide .splide__slide .splide_content {
+  text-align: center;
+  position: relative;
+  width: 410px;
+  height: 100%;
+}
+
+@media (max-width: 375px) {
+  .staff .news_contains .splide .splide__slide .splide_content {
+    width: 350px;
+  }
+}
+
+@media (max-width: 320px) {
+  .staff .news_contains .splide .splide__slide .splide_content {
+    width: 300px;
+  }
+}
+
+.staff .news_contains .splide .splide__slide .news {
+  position: relative;
+  overflow: hidden;
+}
+
+.staff .news_contains .splide .splide__slide .news .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.6) 25%,
+    transparent
+  );
+}
+
+.staff.news_contains .splide .splide__slide .news img {
+  width: 100%;
+  border: 4px solid white;
+  border-radius: 1em;
+}
+
+.staff .news_contains .splide .splide__slide .news figcaption {
+  width: inherit;
+  text-align: center;
+}
+
+.staff .news_contains .splide .splide__slide .news figcaption p {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 2em;
+}
 footer {
-  background-color: #001d2f;
+  background-color: #000;
 }
 
 footer .container {
@@ -797,7 +892,7 @@ footer .copyrights-socail {
   -ms-flex-align: center;
   align-items: center;
   padding: 10px;
-  background-color: #001827;
+  background-color: #000;
   border-radius: 0 1em;
   font-size: 12px;
   text-align: center;

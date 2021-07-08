@@ -12,8 +12,13 @@
       rel="stylesheet"
     />
     <link rel="shortcut icon" type="images/x-icon" href="images/icon.png" />
-
+    <!-- style of slider -->
+    <link rel="stylesheet" href="css/css&sass/splide.min.css" />
+    <!-- <link rel="stylesheet" href="css/splide-skyblue.min.css" /> -->
+    <link rel="stylesheet" href="css/css&sass/splide-sea-green.min.css" />
+    <!-- style of slider -->
     <link rel="stylesheet" href="css/css&sass/chemistryDepartment.css" />
+
     <title>Department | Chemistry</title>
   </head>
   <body>
@@ -177,10 +182,71 @@
           </div>
           <a href="#" class="read_more">Read more</a>
         </div>
-        <!-- staff -->
-        <div class="staff"></div>
       </div>
     </div>
+    <section class="staff">
+      <div class="news_contains">
+        <h1>Staff</h1>
+        <div class="splide">
+          <!-- <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--prev">Prev</button>
+            <button class="splide__arrow splide__arrow--next">Next</button>
+          </div> -->
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="splide_content">
+                  <figure class="news">
+                    <div class="overlay"></div>
+                    <img src="images/geologydepartment.jpg" alt="" />
+                  </figure>
+                  <figcaption>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Fugit, debitis ut distinctio officiis aut expedita
+                      recusandae unde ipsa labore cumque! lorem
+                    </p>
+                  </figcaption>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="splide_content">
+                  <figure class="news">
+                    <div class="overlay"></div>
+                    <img src="images/plantdepartment.jpg" alt="" />
+                  </figure>
+                  <figcaption>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </figcaption>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="splide_content">
+                  <figure class="news">
+                    <div class="overlay"></div>
+                    <img src="images/zoologydepartment.jpg" alt="" />
+                  </figure>
+                  <figcaption>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </figcaption>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="splide_content">
+                  <figure class="news">
+                    <div class="overlay"></div>
+                    <img src="images/chemistry.jpg" alt="" />
+                  </figure>
+                  <figcaption>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </figcaption>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- end info    -->
 
     <!-- footer -->
@@ -259,5 +325,18 @@
       </div>
     </footer>
     <script src="js/department.js"></script>
+    <!-- js slider -->
+    <script src="js/splide.min.js"></script>
+    <script>
+      new Splide(".splide", {
+        type: "loop",
+        autoWidth: true,
+        interval: 2000,
+        speed: 500,
+        focus: "center",
+        autoplay: true,
+      }).mount();
+    </script>
+    <!-- js slider -->
   </body>
 </html>
