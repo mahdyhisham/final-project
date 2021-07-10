@@ -4,11 +4,11 @@ function preloading() {
   window.onload = () => {
     setTimeout(() => {
       loadAnim.style.display = "none";
-      // window.scrollTo({
-      //   top: 0,
-      //   behavior: "smooth",
-      // });
-    }, 1);
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }, 3500);
   };
 }
 preloading();
