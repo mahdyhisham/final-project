@@ -329,6 +329,10 @@ header .container .show li:last-child {
   display: none;
 }
 
+body {
+  background-color: #f8fbfb;
+}
+
 .about {
   font-family: "Scheherazade", serif;
   line-height: 2em;
@@ -349,16 +353,19 @@ header .container .show li:last-child {
 .about .box h2,
 .about .box h3,
 .about .box h4 {
-  color: #fff;
+  color: #000;
   margin: 20px 0;
   text-align: center;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 2em;
 }
 
 .about .box p,
 .about .box li {
+  line-height: 1.4em;
   font-size: 25px;
+  color: #333;
+  font-size: 2em;
 }
 
 .about .box ol {
@@ -385,7 +392,7 @@ header .container .show li:last-child {
 .about .box .headercontent .icon {
   font-size: 50px;
   cursor: pointer;
-  color: #fff;
+  color: #000;
   font-weight: bold;
   font-size: 35px;
   margin-right: 20px;
@@ -409,10 +416,10 @@ header .container .show li:last-child {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 2px solid #333;
-  border-radius: 1em 3em;
-  -webkit-box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5);
-          box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5);
+  border: 2px solid #fff;
+  border-radius: 1em;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   margin: 15px 0;
   padding: 10px;
 }
@@ -428,28 +435,23 @@ header .container .show li:last-child {
 }
 
 .about .box .texting {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#aadfec), to(#21a6c7));
-  background-image: linear-gradient(to bottom, #aadfec, #21a6c7);
+  background-color: #fff;
 }
 
 .about .box .massageing {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#aadfec), to(#21a6c7));
-  background-image: linear-gradient(to top, #aadfec, #21a6c7);
+  background-color: #fff;
 }
 
 .about .box .sure {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#aadfec), to(#21a6c7));
-  background-image: linear-gradient(to top, #aadfec, #21a6c7);
+  background-color: #fff;
 }
 
 .about .box .learn {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#aadfec), to(#21a6c7));
-  background-image: linear-gradient(to top, #aadfec, #21a6c7);
+  background-color: #fff;
 }
 
 .about .box .ways {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#aadfec), to(#21a6c7));
-  background-image: linear-gradient(to top, #aadfec, #21a6c7);
+  background-color: #fff;
   margin-bottom: 50px;
 }
 
