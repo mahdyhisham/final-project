@@ -1,0 +1,65 @@
+@import "../sass/helpers/variables";
+@import "../sass/helpers/globals";
+@import "../sass/layout/grid";
+@import "../sass/helpers/componant";
+
+@import "../sass/layout/header";
+@import "../sass/layout/footer";
+
+.container {
+  .subjects {
+    padding: 25px;
+    margin-bottom: 50px;
+    border: 2px solid $base-color;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 1em;
+    .first,
+    .second,
+    .third,
+    .fourth {
+      padding: 25px 50px;
+      @media (max-width: $s-med) {
+        padding: 25px 0;
+      }
+    }
+    ul {
+      list-style-position: inside;
+    }
+    li {
+      line-height: 2em;
+      color: #555;
+      font-size: 1.2em;
+    }
+    li::before {
+      content: "•";
+      color: red;
+      display: inline-block;
+      width: 1em;
+    }
+    hr {
+      width: 50%;
+      height: 1px;
+      background-color: #333;
+      transform: translateX(50%);
+    }
+    h1 {
+      color: $vilot;
+      font-size: 2em;
+      text-align: center;
+    }
+    h3 {
+      text-align: center;
+      font-size: 1.4em;
+    }
+    h4 {
+      font-size: 1.2em;
+      padding: 1em 0;
+    }
+    h4::before {
+      content: "•";
+      color: black;
+      display: inline-block;
+      width: 1em;
+    }
+  }
+}
