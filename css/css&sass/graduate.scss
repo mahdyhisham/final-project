@@ -1,0 +1,32 @@
+@import "../sass/helpers/variables";
+@import "../sass/helpers/globals";
+@import "../sass/layout/grid";
+@import "../sass/helpers/componant";
+
+@import "../sass/layout/header";
+@import "../sass/layout/footer";
+
+.graduation {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 70px;
+  .have {
+    h2 {
+      text-align: center;
+      padding: 80px 0;
+      color: $vilot;
+      font-size: 1.5em;
+      line-height: 1.3em;
+    }
+    ol {
+      list-style-position: inside;
+    }
+    li {
+      line-height: 2em;
+      color: #555;
+      font-size: 1.2em;
+    }
+  }
+}

@@ -334,6 +334,7 @@ header .container .show li:last-child {
 }
 
 .departments .container {
+  direction: rtl;
   overflow: hidden;
 }
 
@@ -498,7 +499,7 @@ header .container .show li:last-child {
 .departments .container .left ol,
 .departments .container .right ul,
 .departments .container .right ol {
-  list-style-position: inside;
+  list-style-type: none;
 }
 
 .departments .container .left p,
@@ -507,7 +508,7 @@ header .container .show li:last-child {
 .departments .container .right li {
   color: #333;
   line-height: 2em;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .departments .container .left h1,
@@ -518,15 +519,17 @@ header .container .show li:last-child {
 .departments .container .right h2,
 .departments .container .right h3,
 .departments .container .right h4 {
-  font-size: 1.8em;
-  line-height: 2em;
+  font-size: 1.5em;
+  padding: 10px;
   text-align: center;
 }
 
 .departments .container .left .student_rslts,
 .departments .container .right .student_rslts {
-  margin: 0;
-  padding: 15px 0;
+  direction: rtl;
+  margin: auto;
+  text-align: center;
+  padding: 15px;
 }
 
 .departments .container .left .student_rslts span,
@@ -582,8 +585,9 @@ header .container .show li:last-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -611,6 +615,14 @@ header .container .show li:last-child {
   padding: 10px;
   width: 35%;
   background-color: #0f9d58;
+}
+
+@media (max-width: 768px) {
+  .departments .container .left .student_rslts .results .fourFields .input_field .handel label,
+  .departments .container .right .student_rslts .results .fourFields .input_field .handel label {
+    font-size: 14px;
+    padding: 10px 2px;
+  }
 }
 
 @media (max-width: 425px) {
@@ -662,7 +674,7 @@ header .container .show li:last-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px;
+  padding: 10px 5px;
 }
 
 .departments .container .left .student_rslts .results .input_field .dep_field select,
@@ -718,6 +730,7 @@ header .container .show li:last-child {
           align-items: center;
   background-color: #0f9d58;
   padding: 1em;
+  overflow: hidden;
 }
 
 .departments .container .left .student_rslts .form_btns input,
@@ -747,6 +760,13 @@ header .container .show li:last-child {
   color: #fff;
 }
 
+@media (max-width: 425px) {
+  .departments .container .left .student_rslts .form_btns input,
+  .departments .container .right .student_rslts .form_btns input {
+    padding: 0.5em 1em;
+  }
+}
+
 .departments .container .section,
 .departments .container .rules,
 .departments .container .squad {
@@ -771,7 +791,8 @@ header .container .show li:last-child {
 .departments .container .squad li {
   color: #333;
   line-height: 2em;
-  font-size: 1.5em;
+  font-size: 1.1em;
+  word-wrap: wrap;
 }
 
 .departments .container .section h1,
@@ -787,7 +808,6 @@ header .container .show li:last-child {
 .departments .container .squad h3,
 .departments .container .squad h4 {
   font-size: 1.8em;
-  line-height: 2em;
   text-align: center;
 }
 

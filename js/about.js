@@ -57,3 +57,25 @@ function togglebtn(pagin, list, attr) {
   });
 }
 togglebtn(icons, letters, `show`);
+
+// footer list-show-hide
+
+//want to remove active when click any wher eles
+let plus = document.querySelectorAll(".H-S");
+let linkList = document.querySelectorAll(".listlinks");
+
+function togglebtn(pagin, list, attr) {
+  pagin.forEach((plu, i) => {
+    plu.addEventListener("click", (e) => {
+      list.forEach((lis) => {
+        lis.classList.remove(`${attr}`);
+      });
+      // can not close it again onclick twice
+      list[i].classList.toggle(`${attr}`);
+    });
+  });
+}
+togglebtn(plus, linkList, `active`);
+//footer list-show-hide
+
+//
