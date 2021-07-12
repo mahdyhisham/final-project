@@ -18,22 +18,24 @@
   <body>
     <div class="form">
       <div class="clip-path"></div>
-      <form action="">
+      <form onsubmit="submitMessage(); return false">
         <h1>Contact us <i class="far fa-envelope"></i></h1>
         <div class="input_field">
-          <input type="text" placeholder="" />
+          <input id="name" required type="text" placeholder="" />
           <label for="">Full Name<span class="required_field">*</span></label>
         </div>
         <div class="input_field">
-          <input type="text" placeholder="" />
+          <input id="subject" type="text" placeholder="" />
           <label for="">Subject</label>
         </div>
         <div class="input_field">
-          <input type="email" placeholder="" />
+          <input id="email" required type="email" placeholder="" />
           <label for="">Email<span class="required_field">*</span></label>
         </div>
         <div class="input_field">
           <textarea
+            id="message"
+            required
             name=""
             id=""
             cols="30"
@@ -44,6 +46,22 @@
         <input type="submit" class="submit" value="Send" />
       </form>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyBGv1YkM0H5nSJFMdbPhG_NTOYVK-F48NI",
+    authDomain: "facultyofscienceresults.firebaseapp.com",
+    projectId: "facultyofscienceresults",
+    storageBucket: "facultyofscienceresults.appspot.com",
+    messagingSenderId: "192789248650",
+    appId: "1:192789248650:web:2ee342c5d0d93cacce4b73"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  
+  var db = firebase.firestore();
+</script>
     <script src="js/contactUs.js"></script>
   </body>
 </html>
