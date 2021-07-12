@@ -29,31 +29,19 @@
         <nav class="nav">
           <ul class="list">
             <li>
-              <a href="./Home.html"
-                >Home</a
-              >
+              <a href="./Home.html">Home</a>
             </li>
             <li>
-              <a
-                href="./department.html"
-                >Department</a
-              >
+              <a href="./department.html">Department</a>
             </li>
             <li>
-              <a href="./student.html"
-                >Students</a
-              >
+              <a href="./student.html">Students</a>
             </li>
             <li>
-              <a href="./about.html"
-                >About</a
-              >
+              <a href="./about.html">About</a>
             </li>
             <li>
-              <a
-                href="./contactUs.html"
-                >contact Us</a
-              >
+              <a href="./contactUs.html">contact Us</a>
             </li>
             <li>
               <a href="#"><i class="fas fa-user"></i></a>
@@ -364,7 +352,10 @@
         <div class="dep_name right" id="">
           <div class="student_rslts">
             <h1>شاشه البحث عن النتائج</h1>
-            <form onsubmit="getStudentResults(this); return false;" class="results">
+            <form
+              onsubmit="getStudentResults(this); return false;"
+              class="results"
+            >
               <div class="fourFields">
                 <div class="input_field">
                   <div class="handel">
@@ -383,8 +374,7 @@
                     <label for="" class="label_style"
                       >رقم الجلوس<span>*</span></label
                     >
-                    <input id="sittingNumber"
-                    type="text" />
+                    <input id="sittingNumber" type="text" />
                   </div>
                 </div>
                 <div class="input_field">
@@ -395,9 +385,6 @@
                     <select id="year" class="level">
                       <option value="">...</option>
                       <option value="">1</option>
-                      <option value="">2</option>
-                      <option value="">3</option>
-                      <option value="">4</option>
                     </select>
                   </div>
                   <div class="handel">
@@ -413,10 +400,7 @@
                   <label for="" class="label_style">القسم</label>
                   <select id="department" class="departments">
                     <option value="">...</option>
-                    <option value="">1</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                    <option value="">4</option>
+                    <option value="">رياضه و حاسب</option>
                   </select>
                 </div>
               </div>
@@ -426,17 +410,20 @@
               </div>
             </form>
           </div>
+          <section class="results">
+            <div>
+              <h1 class="hidden-h1" style="display: none">المهدي هشام محمد</h1>
+              <h2 class="hidden-h2" style="display: none">
+                math and computerScience
+              </h2>
+            </div>
+            <h1 class="department-name"></h1>
+            <ul class="results-list"></ul>
+          </section>
         </div>
       </div>
     </section>
-    <section class="results">
-      <div>
-        <h1 class="hidden-h1" style="display: none;">lorem asoidjha siduhjasdi uhasd iahsud uiasdhasd</h1>
-      </div>
-      <h1 class="department-name"></h1>
-      <ul class="results-list">
-      </ul> 
-    </section>
+
     <!-- end department -->
     <!-- Start Footer -->
     <footer>
@@ -513,10 +500,9 @@
                 <h5>Phone : 25547934</h5>
                 <h5>Fax : Hewlan@hotmail.com</h5>
                 <h5>
-                  <a
-                    href="./contactUs.html"
-                    >Send message</a
-                  >&nbsp;<i class="far fa-comment"></i>
+                  <a href="./contactUs.html">Send message</a>&nbsp;<i
+                    class="far fa-comment"
+                  ></i>
                 </h5>
               </div>
             </div>
@@ -544,22 +530,22 @@
       </div>
     </footer>
     <!-- End Footer -->
-     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
-     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
- <script>
-   var firebaseConfig = {
-     apiKey: "AIzaSyBGv1YkM0H5nSJFMdbPhG_NTOYVK-F48NI",
-     authDomain: "facultyofscienceresults.firebaseapp.com",
-     projectId: "facultyofscienceresults",
-     storageBucket: "facultyofscienceresults.appspot.com",
-     messagingSenderId: "192789248650",
-     appId: "1:192789248650:web:2ee342c5d0d93cacce4b73"
-   };
-   // Initialize Firebase
-   firebase.initializeApp(firebaseConfig);
-   
-   var db = firebase.firestore();
- </script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyBGv1YkM0H5nSJFMdbPhG_NTOYVK-F48NI",
+        authDomain: "facultyofscienceresults.firebaseapp.com",
+        projectId: "facultyofscienceresults",
+        storageBucket: "facultyofscienceresults.appspot.com",
+        messagingSenderId: "192789248650",
+        appId: "1:192789248650:web:2ee342c5d0d93cacce4b73",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+
+      var db = firebase.firestore();
+    </script>
     <script src="js/student.js"></script>
   </body>
 </html>
